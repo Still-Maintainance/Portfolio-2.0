@@ -10,8 +10,8 @@ export default function Hero() {
             <div className="border-[0.5px] h-20 opacity-20"></div>
             <div className="border-[0.5px] h-20 opacity-20"></div>
             <div className="flex flex-wrap flex-col justify-center text-center items-center col-start-1 col-end-5 row-span-5">
-                <h1 className="text-3xl">I design and build clean websites</h1>
-                <p className="text-base my-5 mx-10">Write anything here something about yourself to showcase what actually you doing or targeting etc.</p>
+                <h1 className="text-3xl">Designing the backbone of modern applications</h1>
+                <p className="text-base my-5 mx-10">Focused on backend development and cloud technologies, I build APIs, manage server infrastructure, and deploy scalable systems with AWS, seamlessly integrating them into intuitive user interfaces.</p>
                 <div className="p-[2px] rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB]">
                     <button className="p-3 px-6 font-semibold rounded-full bg-gradient-to-r from-[#7A87FB] to-[#FFD49C] text-[#101111]">Hire me</button>
                 </div>
