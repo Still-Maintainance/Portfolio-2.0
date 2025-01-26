@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 :root {
     --font-display: 'Poppins', sans-serif;
 }
@@ -8,6 +10,3 @@ body {
     font-family: var(--font-display);
 }
 
-.thin-border {
-    border-width: 0.1px;
-}
