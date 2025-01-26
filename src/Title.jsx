@@ -6,7 +6,7 @@ export default function Title({title}) {
                 <h1 className='text-3xl inline mr-3'>{title}</h1>
                 <div className='relative'>
                     <img src={portal} className='w-10'/>
-                    <img src={portal} className='w-3.5 absolute bottom-7 left-7'/>
+                    <img src={portal} className='w-4 absolute bottom-7 left-7'/>
                 </div>
             </div>
 }
