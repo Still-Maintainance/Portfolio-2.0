@@ -6,19 +6,19 @@ export default function Steps() {
         <div className="m-4 mt-0 flex h-6 w-6 items-center justify-center rounded-full border-2 p-5">
           <div className="text-white">1</div>
         </div>
-        <div className="h-43 border border-white/20"></div>
+        <div className="h-68 border border-white/20"></div>
         <div className="m-4 flex h-6 w-6 items-center justify-center rounded-full border-2 p-5">
           <div className="text-white">2</div>
         </div>
-        <div className="h-35 border border-white/20"></div>
+        <div className="h-56 border border-white/20"></div>
         <div className="m-4 flex h-6 w-6 items-center justify-center rounded-full border-2 p-5">
           <div className="text-white">3</div>
         </div>
-        <div className="h-35 border border-white/20"></div>
+        <div className="h-61 border border-white/20"></div>
         <div className="m-4 flex h-6 w-6 items-center justify-center rounded-full border-2 p-5">
           <div className="text-white">4</div>
         </div>
-        <div className="h-20 border border-white/20"></div>
+        <div className="h-30 border border-white/20"></div>
       </div>
       <div>
         <div className="mb-10 flex flex-col justify-between gap-y-4">
