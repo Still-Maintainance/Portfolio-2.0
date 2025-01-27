@@ -34,22 +34,20 @@ export default function Hero() {
 const skills = [ "C/C++", "Python", "JavaScript", "Node.js", "RESTful APIs", "AWS", "SQL", "Docker", "CI/CD", "React", "Git/GitHub", "Redis", "MongoDB"]
   ;
 
-function Marquee() {
+  function Marquee() {
     return (
         <div className="relative overflow-hidden w-full">
             <div className="flex animate-marquee whitespace-nowrap">
-                {/* First set of skills */}
                 {skills.map((skill, index) => (
-                    <div key={`first-${index}`} className='flex justify-between items-center gap-x-10 p-10 border-b-2 border-white/20'>
-                        <h1 className='text-xl'>{skill}</h1>
-                        <img className='w-8' src={vector} alt="Vector" />
+                    <div key={`first-${index}`} className='flex justify-between items-center gap-x-4 p-4 sm:p-10 sm:gap-x-10 border-b-2 border-white/20'>
+                        <h1 className='text-lg sm:text-xl'>{skill}</h1>
+                        <img className='w-6 sm:w-8' src={vector} alt="Vector" />
                     </div>
                 ))}
-                {/* Duplicate set for continuous scroll */}
                 {skills.map((skill, index) => (
-                    <div key={`second-${index}`} className='flex justify-between items-center gap-x-10 p-10 border-b-2 border-white/20'>
-                        <h1 className='text-xl'>{skill}</h1>
-                        <img className='w-8' src={vector} alt="Vector" />
+                    <div key={`second-${index}`} className='flex justify-between items-center gap-x-4 p-4 sm:p-10 sm:gap-x-10 border-b-2 border-white/20'>
+                        <h1 className='text-lg sm:text-xl'>{skill}</h1>
+                        <img className='w-6 sm:w-8' src={vector} alt="Vector" />
                     </div>
                 ))}
             </div>
