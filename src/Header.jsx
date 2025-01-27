@@ -9,8 +9,8 @@ export default function Header() {
     return (
         <div className='flex justify-between items-center p-3'>
             <div className='flex justify-center items-center gap-x-2'>
-            <img src={ico} alt="Group" />
-            <h1 className="text-xl px-2 font-['Poppins']">farissi</h1>
+                <img src={ico} alt="Group" />
+                <h1 className="text-xl px-2 font-['Poppins']">farissi</h1>
             </div>
             <Navbar isOpen={isMenuOpen}/>
             <NavButton isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} className="md:hidden">Menu</NavButton>
