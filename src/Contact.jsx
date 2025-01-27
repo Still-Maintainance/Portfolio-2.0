@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import insta from "./assets/insta.svg";
 import link from "./assets/linkedin.svg";
 import github from "./assets/github.svg";
