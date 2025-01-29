@@ -17,7 +17,7 @@ export default function Contact() {
           Send me a message
         </button>
       </div>
-      <div className="mx-auto mt-24 mb-5 rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[1px]">
+      <div className="mx-auto mt-24 mb-5 rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
         <div className="flex gap-5 rounded-full bg-[#1C1C1C]">
           <Icone src={insta} alt="instagram" />
           <Icone src={link} alt="linkedin" />
@@ -25,7 +25,7 @@ export default function Contact() {
           <Icone src={twiter} alt="twiter" />
         </div>
       </div>
-      <div className="mx-auto flex items-center justify-center gap-x-2">
+      <div className="mx-auto flex items-center justify-center gap-x-2 mb-8">
         <img src={ico} alt="Group" />
         <h1 className="px-2 font-['Poppins'] text-xl">farissi</h1>
       </div>
