@@ -22,7 +22,7 @@ export default function Navbar(props) {
 
 export function Navitem({ children, className }) {
     return (
-        <a href="#" className={`text-white ${className}`}>
+        <a href="#" className={`text-[#101111] font-medium ${className}`}>
             {children}
         </a>
     );
@@ -43,7 +43,7 @@ export function NavButton({className, setIsMenuOpen, isMenuOpen }) {
     return (
         <div className={"flex p-[2px] rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] justify-center items-center gap-2 "} >
             {isMenuOpen &&   
-                    <div className="flex justify-around mx-2 gap-1.5 font-['Poppins']">
+                    <div className="flex justify-around  gap-1.5 font-['Poppins'] text-xs ">
                         <Navitem>About</Navitem>
                         <Navitem>Projects</Navitem>
                         <Navitem>Contact me</Navitem>

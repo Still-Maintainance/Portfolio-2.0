@@ -13,7 +13,7 @@ export default function Hero() {
           <h1 className="px-4 text-3xl md:text-3xl ">
             Hi, I'm Hamza Farissi.
           </h1>
-          <p className="mx-4 my-3 text-sm md:mx-10 md:my-5 md:text-base opacity-85">
+          <p className="mx-4 my-3 text-sm md:mx-10 md:my-5 md:text-base opacity-85 ">
           I specialize in backend development and cloud technologies, crafting scalable APIs, managing server infrastructures, and integrating them with modern frontend systems to create seamless user experiences.
           </p>
           <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
