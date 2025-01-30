@@ -22,7 +22,7 @@ export default function Navbar(props) {
 
 export function Navitem({ children, className }) {
     return (
-        <a href="#" className={`text-[#101111] font-medium ${className}`}>
+        <a href="#" className={`text-white font-medium ${className} text-shadow`}>
             {children}
         </a>
     );
