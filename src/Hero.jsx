@@ -10,13 +10,11 @@ export default function Hero() {
         <div className="h-20 border-[0.5px] opacity-20"></div>
         <div className="h-20 border-[0.5px] opacity-20"></div>
         <div className="col-start-1 col-end-5 row-span-5 flex flex-col flex-wrap items-center justify-center text-center">
-          <h1 className="px-4 text-2xl md:text-3xl">
-            Designing the backbone of modern applications
+          <h1 className="px-4 text-3xl md:text-3xl">
+            Hi, I'm Hamza Farissi.
           </h1>
           <p className="mx-4 my-3 text-sm md:mx-10 md:my-5 md:text-base">
-            Focused on backend development and cloud technologies, I build APIs,
-            manage server infrastructure, and deploy scalable systems with AWS,
-            seamlessly integrating them into intuitive user interfaces.
+          I specialize in backend development and cloud technologies, crafting scalable APIs, managing server infrastructures, and integrating them with modern frontend systems to create seamless user experiences.
           </p>
           <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
             <button className="rounded-full bg-gradient-to-r from-[#7A87FB] to-[#FFD49C] p-3 px-6 font-semibold text-[#101111]">

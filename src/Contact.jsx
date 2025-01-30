@@ -3,7 +3,7 @@ import insta from "./assets/insta.svg";
 import link from "./assets/linkedin.svg";
 import github from "./assets/github.svg";
 import twiter from "./assets/twitter.svg";
-import ico from "./assets/Group.svg";
+import ico from "./assets/google-gemini-icon.svg";
 
 export default function Contact() {
   return (
@@ -26,8 +26,8 @@ export default function Contact() {
         </div>
       </div>
       <div className="mx-auto flex items-center justify-center gap-x-2 mb-8">
-        <img src={ico} alt="Group" />
-        <h1 className="px-2 font-['Poppins'] text-xl">farissi</h1>
+        <img src={ico} alt="Group" width={35}/>
+        <h1 className="px-2 font-['Poppins'] text-xl">Farissi</h1>
       </div>
     </div>
   );

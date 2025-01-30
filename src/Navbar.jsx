@@ -49,7 +49,7 @@ export function NavButton({className, setIsMenuOpen, isMenuOpen }) {
                         <Navitem>Contact me</Navitem>
                     </div>}
 
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className={`bg-[#292929] px-5 py-3 rounded-3xl border-4 border-[#1C1C1C] ${className}`}>
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className={`bg-[#292929] px-3 py-1 rounded-3xl border-4 border-[#1C1C1C] ${className}`}>
                 <img src={jamMenu} alt="Home" />
             </button>
         </div>
