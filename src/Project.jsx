@@ -2,7 +2,7 @@
 export default function Project({ title, number }) {
   return (
     <div className="mx-auto mt-10 flex w-9/11 flex-col items-start justify-center gap-5 bg-[#151515] pb-8 md:flex-row  lg:mx-auto lg:w-14/20 lg:justify-start lg:items-center ">
-      <div className="mt-8 h-100 w-100  bg-linear-to-r from-[#FFD49C] to-[#7A87FB] justify-self-auto lg:m-10 lg:w-120 lg:h-120">
+      <div className="mt-8 h-100 w-full  bg-linear-to-r from-[#FFD49C] to-[#7A87FB] justify-self-auto lg:m-10 lg:w-120 lg:h-120">
         <img className=" " />
       </div>
       <Num number={number} />

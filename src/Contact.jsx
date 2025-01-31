@@ -7,16 +7,19 @@ import ico from "./assets/google-gemini-icon.svg";
 
 export default function Contact() {
   return (
-    <div className="text-text-sm mx-auto flex w-13/14 flex-col items-start justify-start gap-5">
-      <p>
-        I'd love to hear from you! Feel free to reach out for questions,
-        collaboration, or just to connect.
-      </p>
-      <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
-        <button className="rounded-full bg-gradient-to-r from-[#7A87FB] to-[#FFD49C] p-2 px-6 font-semibold text-[#101111]">
-          Send me a message
-        </button>
+    <div className="text-text-sm mx-auto flex w-13/14 flex-col items-start justify-start gap-5 lg:w-15/20 lg:mx-auto">
+      <div className="flex flex-col items-start justify-start gap-5">
+        <p className="lg:max-w-100">
+          I'd love to hear from you! Feel free to reach out for questions,
+          collaboration, or just to connect.
+        </p>
+        <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
+          <button className="rounded-full bg-gradient-to-r from-[#7A87FB] to-[#FFD49C] p-2 px-6 font-semibold text-[#101111]">
+            Send me a message
+          </button>
+        </div>
       </div>
+        <Style />
       <div className="mx-auto mt-24 mb-5 rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
         <div className="flex gap-5 rounded-full bg-[#1C1C1C]">
           <Icone src={insta} alt="instagram" />
@@ -41,4 +44,10 @@ export function Icone({ src, alt }) {
       <img width={24} src={src} alt={alt} />
     </div>
   );
+}
+export function Style(){
+  return (
+    <div>
+      <h1>Style</h1>
+    </div>)
 }

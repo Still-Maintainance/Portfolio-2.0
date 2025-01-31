@@ -17,12 +17,22 @@ export default function App() {
             <Project title="Project name" number="2"/>
             <Project title="Project name" number="3"/>
             <Title title="Client Testimonials " />
-            <Testimonial name="Your Name here" title="your Title here" feedback="Your feedback could be featured here! Let's work together, and I'd love
-                        to showcase your experience."/>
-            <Testimonial name="Your Name here" title="your Title here" feedback="Your feedback could be featured here! Let's work together, and I'd love
-                        to showcase your experience."/>
-            <Testimonial name="Your Name here" title="your Title here" feedback="Your feedback could be featured here! Let's work together, and I'd love
-                        to showcase your experience."/>
+            <div className="lg:w:10/20 lg:mx-auto lg:flex lg:flex-wrap lg:justify-center">
+
+                <div className="lg:flex lg:gap-2">
+
+                <Testimonial name="Your Name here" title="your Title here" feedback="Your feedback could be featured here! Let's work together, and I'd love
+                            to showcase your experience."/>
+                <Testimonial name="Your Name here" title="your Title here" feedback="Your feedback could be featured here! Let's work together, and I'd love
+                            to showcase your experience."/>
+                </div>
+                <div className="lg:flex lg:gap-2">
+                <Testimonial name="Your Name here" title="your Title here" feedback="Your feedback could be featured here! Let's work together, and I'd love
+                            to showcase your experience."/>
+                <Testimonial name="Your Name here" title="your Title here" feedback="Your feedback could be featured here! Let's work together, and I'd love
+                            to showcase your experience."/>
+                </div>
+            </div>
             <Title title="Have idea about project?" />
             <Contact />
         </div>
