@@ -29,11 +29,13 @@ export default function Contact() {
         <img src={ico} alt="Group" width={35}/>
         <h1 className="px-2 font-['Poppins'] text-xl">Farissi</h1>
       </div>
+      
     </div>
+    
   );
 }
 
-function Icone({ src, alt }) {
+export function Icone({ src, alt }) {
   return (
     <div className="rounded-full bg-[#292929] px-5 py-2.5">
       <img width={24} src={src} alt={alt} />

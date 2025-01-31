@@ -5,7 +5,7 @@
         font-family: var(--font-display);
     }
     .text-shadow {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.89);
     }
 }
 

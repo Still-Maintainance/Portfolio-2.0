@@ -2,7 +2,7 @@ import Navbar from './Navbar';
 import { NavButton } from './Navbar';
 import { useState } from 'react';
 import ico from './assets/google-gemini-icon.svg'
-
+import { Profile } from './Navbar';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ export default function Header() {
             </div>
             <Navbar isOpen={isMenuOpen}/>
             <NavButton isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} className="md:hidden">Menu</NavButton>
-
+            <Profile />
         </div>
     );
 }
