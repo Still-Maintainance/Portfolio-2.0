@@ -1,7 +1,7 @@
 import pac from "./assets/Ellipse 17.svg";
 export default function Steps() {
   return (
-    <div className="flex ">
+    <div className="flex md:w-15/20 md:mx-auto">
       <div className="mx-14 flex w-0 flex-col items-center">
         <div className="m-4 mt-0 flex h-6 w-6 items-center justify-center rounded-full border-2 p-5">
           <div className="text-white">1</div>
@@ -20,7 +20,7 @@ export default function Steps() {
         </div>
         <div className="h-30 border border-white/20"></div>
       </div>
-      <div>
+      <div className="md:max-w-150">
         <div className="mb-10 flex flex-col justify-between gap-y-4">
           <img className="w-10" src={pac} alt="pacman" />
           <h2 className="text-2xl">Step 1: Requirement Analysis</h2>

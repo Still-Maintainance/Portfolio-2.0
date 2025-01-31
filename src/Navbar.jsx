@@ -7,7 +7,7 @@ export default function Navbar(props) {
   console.log(props);
   return (
     <>
-      <div className="hidden rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] md:block">
+      <div className="hidden rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] lg:block">
         <nav className="flex items-center justify-between gap-x-10 rounded-full bg-[#1C1C1C]">
           <div className="m-1 rounded-full bg-[#292929] px-4">
             <img width={37} src={homeIcon} />
@@ -23,10 +23,7 @@ export default function Navbar(props) {
 
 export function Navitem({ children, className }) {
   return (
-    <a
-      href="#"
-      className={` text-white ${className} text-shadow mx-1`}
-    >
+    <a href="#" className={`text-white ${className} text-shadow mx-1`}>
       {children}
     </a>
   );
@@ -46,7 +43,7 @@ export function NavButton({ className, setIsMenuOpen, isMenuOpen }) {
   return (
     <div
       className={
-        "md:hidden flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] md:invisible"
+        "flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] lg:hidden"
       }
     >
       {isMenuOpen && (
@@ -67,17 +64,12 @@ export function NavButton({ className, setIsMenuOpen, isMenuOpen }) {
   );
 }
 
-export function Profile(){
-    return (
-        <div className="md:block hidden rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[1px]">
-
-            <div className="rounded-full bg-gradient-to-r from-[#7A87FB] to-[#FFD49C] p-4">
-                <img 
-                    className="w-4" 
-                    src={logo} 
-                    alt="Profile"
-                />
-            </div>
-        </div>
-    )
+export function Profile() {
+  return (
+    <div className="hidden rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[1px] lg:block">
+      <div className="rounded-full bg-gradient-to-r from-[#7A87FB] to-[#FFD49C] p-4">
+        <img className="w-4" src={logo} alt="Profile" />
+      </div>
+    </div>
+  );
 }
