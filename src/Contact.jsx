@@ -7,10 +7,11 @@ import ico from "./assets/google-gemini-icon.svg";
 
 export default function Contact() {
   return (
-    <div className="text-text-sm mx-auto flex w-13/14 flex-col items-start justify-start gap-5 lg:w-15/20 lg:mx-auto">
+    <div className="text-text-sm mx-auto flex w-13/14 flex-col items-start justify-start gap-5 lg:mx-auto lg:w-15/20">
+      <div className="flex flex-col">
       <div className="flex flex-col items-start justify-start gap-5">
         <p className="lg:max-w-100">
-          I'd love to hear from you! Feel free to reach out for questions,
+          I&apos;d love to hear from you! Feel free to reach out for questions,
           collaboration, or just to connect.
         </p>
         <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
@@ -18,8 +19,10 @@ export default function Contact() {
             Send me a message
           </button>
         </div>
+      <Style />
+
       </div>
-        <Style />
+      </div>
       <div className="mx-auto mt-24 mb-5 rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
         <div className="flex gap-5 rounded-full bg-[#1C1C1C]">
           <Icone src={insta} alt="instagram" />
@@ -28,13 +31,11 @@ export default function Contact() {
           <Icone src={twiter} alt="twiter" />
         </div>
       </div>
-      <div className="mx-auto flex items-center justify-center gap-x-2 mb-8">
-        <img src={ico} alt="Group" width={35}/>
+      <div className="mx-auto mb-8 flex items-center justify-center gap-x-2">
+        <img src={ico} alt="Group" width={35} />
         <h1 className="px-2 font-['Poppins'] text-xl">Farissi</h1>
       </div>
-      
     </div>
-    
   );
 }
 
@@ -45,9 +46,10 @@ export function Icone({ src, alt }) {
     </div>
   );
 }
-export function Style(){
+export function Style() {
   return (
     <div>
       <h1>Style</h1>
-    </div>)
+    </div>
+  );
 }

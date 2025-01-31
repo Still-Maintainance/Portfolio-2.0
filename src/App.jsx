@@ -17,21 +17,15 @@ export default function App() {
             <Project title="Project name" number="2"/>
             <Project title="Project name" number="3"/>
             <Title title="Client Testimonials " />
-            <div className="lg:w:10/20 lg:mx-auto lg:flex lg:flex-wrap lg:justify-center">
-
-                <div className="lg:flex lg:gap-2">
-
+            <div className="lg:grid lg:grid-cols-2  lg:gap-2 gap-5 lg:w-13/20 lg:mx-auto">
                 <Testimonial name="Your Name here" title="your Title here" feedback="Your feedback could be featured here! Let's work together, and I'd love
-                            to showcase your experience."/>
+                        to showcase your experience."/>
                 <Testimonial name="Your Name here" title="your Title here" feedback="Your feedback could be featured here! Let's work together, and I'd love
-                            to showcase your experience."/>
-                </div>
-                <div className="lg:flex lg:gap-2">
+                        to showcase your experience."/>
                 <Testimonial name="Your Name here" title="your Title here" feedback="Your feedback could be featured here! Let's work together, and I'd love
-                            to showcase your experience."/>
+                        to showcase your experience."/>
                 <Testimonial name="Your Name here" title="your Title here" feedback="Your feedback could be featured here! Let's work together, and I'd love
-                            to showcase your experience."/>
-                </div>
+                        to showcase your experience."/>
             </div>
             <Title title="Have idea about project?" />
             <Contact />

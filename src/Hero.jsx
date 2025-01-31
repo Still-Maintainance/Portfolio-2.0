@@ -15,7 +15,7 @@ export default function Hero() {
 
         <div className="col-start-1 col-end-5 row-span-5 flex flex-col flex-wrap items-center justify-center text-center lg:col-start-2 lg:col-end-6 lg:row-span-3">
           <h1 className="px-4 text-3xl tracking-wide md:text-4xl">
-            Hi, I'm Hamza Farissi.
+            Hi, I&apos;m Hamza Farissi.
           </h1>
           <p className="mx-4 my-3 text-sm/5.5 tracking-wide opacity-85 md:mx-10 md:my-5 md:max-w-xl md:whitespace-normal">
             I specialize in backend development and cloud technologies, crafting

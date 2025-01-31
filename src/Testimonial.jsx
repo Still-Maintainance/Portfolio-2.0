@@ -3,7 +3,7 @@ import fasila from "./assets/fasila.svg";
 // eslint-disable-next-line react/prop-types
 export default function Testimonial({ name, title, feedback }) {
   return (
-    <div className="relative mx-auto mb-7 max-w-xs md:max-w-md">
+    <div className="relative mx-auto mb-7 max-w-xs md:max-w-md lg:mx-0 lg:max-w-xl">
       <div className="rounded-3xl bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[1px]">
         <div className="rounded-3xl bg-[#151515] p-6">
           <div className="mb-6 flex items-center">
