@@ -1,20 +1,20 @@
 import pac from "./assets/Ellipse 17.svg";
 export default function Steps() {
   return (
-    <div className="flex md:w-15/20 md:mx-auto">
+    <div className="flex md:mx-auto md:w-15/20">
       <div className="mx-14 flex w-0 flex-col items-center">
         <div className="m-4 mt-0 flex h-6 w-6 items-center justify-center rounded-full border-2 p-5">
           <div className="text-white">1</div>
         </div>
-        <div className="h-68 border border-white/20"></div>
+        <div className="h-68 border border-white/20 md:h-42 lg:h-36"></div>
         <div className="m-4 flex h-6 w-6 items-center justify-center rounded-full border-2 p-5">
           <div className="text-white">2</div>
         </div>
-        <div className="h-56 border border-white/20"></div>
+        <div className="h-56 border border-white/20 md:h-35 lg:h-36"></div>
         <div className="m-4 flex h-6 w-6 items-center justify-center rounded-full border-2 p-5">
           <div className="text-white">3</div>
         </div>
-        <div className="h-61 border border-white/20"></div>
+        <div className="h-61 border border-white/20 md:h-36 lg:h-35"></div>
         <div className="m-4 flex h-6 w-6 items-center justify-center rounded-full border-2 p-5">
           <div className="text-white">4</div>
         </div>
