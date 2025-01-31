@@ -1,7 +1,7 @@
 import pac from "./assets/Ellipse 17.svg";
 export default function Steps() {
   return (
-    <div className="flex">
+    <div className="flex ">
       <div className="mx-14 flex w-0 flex-col items-center">
         <div className="m-4 mt-0 flex h-6 w-6 items-center justify-center rounded-full border-2 p-5">
           <div className="text-white">1</div>

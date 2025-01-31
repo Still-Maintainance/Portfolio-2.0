@@ -8,7 +8,7 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     
     return (
-        <div className='flex justify-between items-center p-3'>
+        <div className='flex justify-between items-center  mt-6 md:w-15/20 md:mx-auto'>
             <div className='flex justify-center items-center gap-x-2'>
             <img src={ico} alt="Group"  width={35}/>
             <h1 className="text-xl px-2 font-['Poppins']">Farissi</h1>

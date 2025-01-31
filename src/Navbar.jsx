@@ -9,8 +9,8 @@ export default function Navbar(props) {
     <>
       <div className="hidden rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] md:block">
         <nav className="flex items-center justify-between gap-x-10 rounded-full bg-[#1C1C1C]">
-          <div className="m-1.5 rounded-full bg-[#292929] px-4 py-2">
-            <img width={38} src={homeIcon} />
+          <div className="m-1 rounded-full bg-[#292929] px-4">
+            <img width={37} src={homeIcon} />
           </div>
           <Navitem>About</Navitem>
           <Navitem>Projects</Navitem>
@@ -25,7 +25,7 @@ export function Navitem({ children, className }) {
   return (
     <a
       href="#"
-      className={`font-medium text-white ${className} text-shadow mx-1`}
+      className={` text-white ${className} text-shadow mx-1`}
     >
       {children}
     </a>
@@ -69,11 +69,11 @@ export function NavButton({ className, setIsMenuOpen, isMenuOpen }) {
 
 export function Profile(){
     return (
-        <div className="md:block hidden rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
+        <div className="md:block hidden rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[1px]">
 
-            <div className="rounded-full bg-gradient-to-r from-[#7A87FB] to-[#FFD49C] p-4.5">
+            <div className="rounded-full bg-gradient-to-r from-[#7A87FB] to-[#FFD49C] p-4">
                 <img 
-                    className="w-4.5" 
+                    className="w-4" 
                     src={logo} 
                     alt="Profile"
                 />
