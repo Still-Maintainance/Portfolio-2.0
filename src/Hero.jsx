@@ -1,6 +1,8 @@
 import portal from "./assets/Portal.svg";
 import vector from "./assets/Vector.svg";
 import Button from "./components/Button";
+import GlowEffect from "./components/Portal";
+import GlowingIcon from "./components/Star";
 
 export default function Hero() {
   return (
@@ -25,16 +27,12 @@ export default function Hero() {
           </p>
           <Button title="View Projects" />
         </div>
-        <img
-          src={portal}
-          alt="Portal"
-          className="absolute top-16.5 left-3/4 w-7 -translate-x-1/2 transform transition-all duration-300 hover:brightness-125 hover:[filter:drop-shadow(0_0_0.5rem_#FFD49C)] lg:top-15.5 lg:left-5/6 lg:w-9"
-        />
-        <img
-          src={portal}
-          alt="Portal"
-          className="absolute bottom-36.5 left-1/4 w-7 -translate-x-1/2 transform transition-all duration-300 hover:brightness-125 hover:[filter:drop-shadow(0_0_0.5rem_#7A87FB)] lg:bottom-55.5 lg:left-1/6 lg:w-9"
-        />
+        <div className="absolute top-16.5 left-3/4 -translate-x-1/2 transform lg:top-15.5 lg:left-5/6 lg:w-9">
+          <GlowingIcon  />
+        </div>
+        <div className="absolute bottom-36.5 left-1/4 -translate-x-1/2 transform lg:bottom-55.5 lg:left-1/6 lg:w-9">
+          <GlowingIcon />
+        </div>
         <div className="h-20 border-[0.5px] opacity-20"></div>
         <div className="h-20 border-[0.5px] opacity-20"></div>
         <div className="h-20 border-[0.5px] opacity-20"></div>

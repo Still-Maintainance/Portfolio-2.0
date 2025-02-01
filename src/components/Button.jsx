@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/prop-types
 export default function Button({ title }) {
     return (
         <div className="group relative rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] transition-all duration-300 hover:shadow-lg hover:shadow-[#7A87FB]/50">

@@ -41,10 +41,10 @@ export function MobileNav({ children, className }) {
 export function NavButton({ className, setIsMenuOpen, isMenuOpen }) {
   console.log(isMenuOpen);
   return (
-    <div className="relative flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] transition-all duration-300 hover:from-[#FFB854] hover:to-[#5A6BFF] lg:hidden">
+    <div className="group relative flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] transition-all duration-300 hover:shadow-lg hover:shadow-[#7A87FB]/50 lg:hidden">
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className={`rounded-3xl border-4 border-[#1C1C1C] bg-[#292929] px-3 py-1 transition-colors duration-200 hover:bg-[#363636] ${className}`}
+        className={`cursor-pointer rounded-3xl border-4 border-[#1C1C1C] bg-[#292929] from-[#7A87FB] to-[#FFD49C] px-3 py-1 transition-colors duration-200 group-hover:bg-gradient-to-r ${className}`}
       >
         <img src={jamMenu} alt="Home" className="h-6 w-6" />
       </button>
