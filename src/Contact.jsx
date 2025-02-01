@@ -10,7 +10,7 @@ import Title from "./Title";
 export default function Contact() {
   return (
     <div className="text-text-sm mx-auto flex w-13/14 flex-col items-start justify-start gap-5 lg:mx-auto lg:w-15/20 lg:mt-20">
-      <div className="flex justify-between w-15/20">
+      <div className="flex justify-between w-full lg:w-15/20">
         <div className="flex flex-col lg:flex-row lg:justify-between">
           <div className="flex flex-col lg:w-150">
             <Title title="Have idea about project?" className={"mt-12 ml-0 flex items-center md:w-15/20 mb-12"}/>
