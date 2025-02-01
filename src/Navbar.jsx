@@ -41,25 +41,20 @@ export function MobileNav({ children, className }) {
 export function NavButton({ className, setIsMenuOpen, isMenuOpen }) {
   console.log(isMenuOpen);
   return (
-    <div
-      className={
-        "flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] lg:hidden"
-      }
-    >
-      {isMenuOpen && (
-        <div className="flex justify-around font-['Poppins'] text-xs">
-          <Navitem>About</Navitem>
-          <Navitem>Projects</Navitem>
-          <Navitem>Contact me</Navitem>
-        </div>
-      )}
-
+    <div className="relative flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] lg:hidden">
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         className={`rounded-3xl border-4 border-[#1C1C1C] bg-[#292929] px-3 py-1 ${className}`}
       >
         <img src={jamMenu} alt="Home" />
       </button>
+      {isMenuOpen && (
+        <div className="absolute right-0 top-full z-50 mt-2 w-48 rounded-lg bg-[#1C1C1C] shadow-lg">
+          <Navitem className="block px-4 py-2">About</Navitem>
+          <Navitem className="block px-4 py-2">Projects</Navitem>
+          <Navitem className="block px-4 py-2">Contact me</Navitem>
+        </div>
+      )}
     </div>
   );
 }
