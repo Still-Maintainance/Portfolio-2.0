@@ -3,18 +3,17 @@ import homeIcon from "./assets/Home Icom.svg";
 import jamMenu from "./assets/jam_menu.svg";
 import logo from "./assets/profile.svg";
 
-export default function Navbar(props) {
-  console.log(props);
+export default function Navbar() {
   return (
     <>
       <div className="hidden rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] lg:block">
-        <nav className="flex items-center justify-between gap-x-10 rounded-full bg-[#1C1C1C]">
-          <div className="m-1 rounded-full bg-[#292929] px-4">
-            <img width={37} src={homeIcon} />
+        <nav className="flex items-center justify-between gap-x-10 rounded-full bg-[#1C1C1C] transition-all duration-300">
+          <div className="m-1 rounded-full bg-[#292929] px-4 transition-all duration-300 hover:scale-110 cursor-pointer">
+            <img width={37} src={homeIcon} alt="Home" className="transition-transform duration-300" />
           </div>
-          <Navitem>About</Navitem>
-          <Navitem>Projects</Navitem>
-          <Navitem className={"mr-8"}>Contact me</Navitem>
+          <Navitem className="transition-all duration-300 hover:text-[#FFD49C] hover:scale-105">About</Navitem>
+          <Navitem className="transition-all duration-300 hover:text-[#FFD49C] hover:scale-105">Projects</Navitem>
+          <Navitem className="mr-8 transition-all duration-300 hover:text-[#FFD49C] hover:scale-105">Contact me</Navitem>
         </nav>
       </div>
     </>

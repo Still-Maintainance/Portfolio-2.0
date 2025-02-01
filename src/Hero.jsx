@@ -1,7 +1,5 @@
-import portal from "./assets/Portal.svg";
 import vector from "./assets/Vector.svg";
 import Button from "./components/Button";
-import GlowEffect from "./components/Portal";
 import GlowingIcon from "./components/Star";
 
 export default function Hero() {

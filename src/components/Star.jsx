@@ -1,7 +1,9 @@
 import { useState } from 'react';
 
+// eslint-disable-next-line react/prop-types
 const GlowingIcon = ({ className = '', size = 14, ...props }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const gradientId = `starGradient-${Math.random()}`; // Unique ID
 
   return (
     <svg
@@ -18,23 +20,29 @@ const GlowingIcon = ({ className = '', size = 14, ...props }) => {
         md:w-6 md:h-6 
         lg:w-9 lg:h-9
         cursor-pointer 
-        transition-all duration-300 
+        transition-transform duration-300 
         ${className} 
         ${isHovered ? 'scale-125' : 'scale-100'}
         hover:animate-pulse
       `}
       style={{
         filter: isHovered 
-          ? 'drop-shadow(0 0 12px rgba(122, 135, 251, 0.8))' 
+          ? 'drop-shadow(0 0 12px rgba(122, 135, 251, 1))' 
           : 'drop-shadow(0 0 4px rgba(122, 135, 251, 0.3))',
       }}
       {...props}
     >
-      7A87FB
       <defs>
-        <linearGradient id="hoverGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#FFD49C" />
-          <stop offset="100%" stopColor="#7A87FB" />
+        <linearGradient 
+          id={gradientId} 
+          x1="0%" 
+          y1="0%" 
+          x2="100%" 
+          y2="100%"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0%" stopColor="#FFD49C" stopOpacity="1" />
+          <stop offset="100%" stopColor="#7A87FB" stopOpacity="1" />
         </linearGradient>
       </defs>
 
@@ -42,8 +50,7 @@ const GlowingIcon = ({ className = '', size = 14, ...props }) => {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M7 14C6.986 10.1388 3.85739 7.01297 0 7.01297C3.86599 7.01297 7 3.87312 7 0C7.01394 3.86124 10.1426 6.98703 14 6.98703C10.1339 6.98703 7 10.1269 7 14Z"
-        fill={isHovered ? "url(#hoverGradient)" : "white"}
-        className="transition-colors duration-300"
+        fill={isHovered ? `url(#${gradientId})` : '#FFFFFF'}
       />
     </svg>
   );
