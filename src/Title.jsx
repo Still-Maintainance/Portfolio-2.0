@@ -1,9 +1,9 @@
 import portal from "./assets/Portal.svg";
 
 // eslint-disable-next-line react/prop-types
-export default function Title({ title }) {
+export default function Title({ title, className }) {
   return (
-    <div className="mt-12 mb-12 ml-6 flex items-center md:w-15/20 md:mx-auto">
+    <div className={`mt-12 ml-6 flex items-center md:w-15/20 md:mx-auto ${className || 'mb-12'}`}>
       <h1 className="mr-3 text-[1.3rem] md:text-3xl">{title}</h1>
       <div className="relative">
         <img src={portal} className="w-6 md:w-10" />
