@@ -41,18 +41,24 @@ export function MobileNav({ children, className }) {
 export function NavButton({ className, setIsMenuOpen, isMenuOpen }) {
   console.log(isMenuOpen);
   return (
-    <div className="relative flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] lg:hidden">
+    <div className="relative flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] transition-all duration-300 hover:from-[#FFB854] hover:to-[#5A6BFF] lg:hidden">
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className={`rounded-3xl border-4 border-[#1C1C1C] bg-[#292929] px-3 py-1 ${className}`}
+        className={`rounded-3xl border-4 border-[#1C1C1C] bg-[#292929] px-3 py-1 transition-colors duration-200 hover:bg-[#363636] ${className}`}
       >
-        <img src={jamMenu} alt="Home" />
+        <img src={jamMenu} alt="Home" className="h-6 w-6" />
       </button>
       {isMenuOpen && (
-        <div className="absolute right-0 top-full z-50 mt-2 w-48 rounded-lg bg-[#1C1C1C] shadow-lg">
-          <Navitem className="block px-4 py-2">About</Navitem>
-          <Navitem className="block px-4 py-2">Projects</Navitem>
-          <Navitem className="block px-4 py-2">Contact me</Navitem>
+        <div className="absolute top-full right-0 z-50 mt-2 w-48 rounded-lg border border-[#363636] bg-[#1C1C1C] shadow-lg backdrop-blur-lg">
+          <Navitem className="block px-4 py-3 transition-colors duration-200 first:rounded-t-lg hover:bg-[#292929]">
+            About
+          </Navitem>
+          <Navitem className="block px-4 py-3 transition-colors duration-200 hover:bg-[#292929]">
+            Projects
+          </Navitem>
+          <Navitem className="block px-4 py-3 transition-colors duration-200 last:rounded-b-lg hover:bg-[#292929]">
+            Contact me
+          </Navitem>
         </div>
       )}
     </div>
