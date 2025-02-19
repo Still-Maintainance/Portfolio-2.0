@@ -3,7 +3,7 @@ import Hero from "./Hero";
 import Steps from "./Steps";
 import Title from "./Title";
 import Project from "./Project";
-import Testimonial from "./Testimonial";
+import TechStack from "./Tech";
 import Contact from "./Contact";
 export default function App() {
   return (
@@ -43,34 +43,8 @@ export default function App() {
         />
       </div>
       <Title title="Client Testimonials " />
-      <div className="items-start justify-start lg:mx-auto lg:w-15/20">
-        <div className="gap-5 lg:grid lg:grid-cols-2 lg:gap-2">
-          <Testimonial
-            name="Your Name here"
-            title="your Title here"
-            feedback="Your feedback could be featured here! Let's work together, and I'd love
-                            to showcase your experience."
-          />
-          <Testimonial
-            name="Your Name here"
-            title="your Title here"
-            feedback="Your feedback could be featured here! Let's work together, and I'd love
-                            to showcase your experience."
-          />
-          <Testimonial
-            name="Your Name here"
-            title="your Title here"
-            feedback="Your feedback could be featured here! Let's work together, and I'd love
-                            to showcase your experience."
-          />
-          <Testimonial
-            name="Your Name here"
-            title="your Title here"
-            feedback="Your feedback could be featured here! Let's work together, and I'd love
-                            to showcase your experience."
-          />
-        </div>
-      </div>
+
+      <TechStack />
       <Contact />
     </div>
   );
