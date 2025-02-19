@@ -60,7 +60,6 @@ export default function Hero() {
         <div className="hidden h-20 border-[0.5px] opacity-20 lg:block"></div>
         <div className="hidden h-20 border-[0.5px] opacity-20 lg:block"></div>
         <div className="hidden h-20 border-[0.5px] opacity-20 lg:block"></div>
-        <div className="hidden h-20 border-[0.5px] opacity-20 lg:block"></div>
         
       </div>
       <Marquee />

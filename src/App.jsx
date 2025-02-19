@@ -5,6 +5,7 @@ import Title from "./Title";
 import Project from "./Project";
 import TechStack from "./Tech";
 import Contact from "./Contact";
+import About from "./About";
 export default function App() {
   return (
     <div>
@@ -42,9 +43,11 @@ export default function App() {
           githubLink="https://github.com/your-username/project-repo"
         />
       </div>
-      <Title title="Client Testimonials " />
+      <Title title="Skills & Technologies" />
 
       <TechStack />
+      <Title title="About Me" />
+      <About />
       <Contact />
     </div>
   );
