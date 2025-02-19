@@ -13,9 +13,11 @@ export default function App() {
             <Title title="My Development Workflow" />
             <Steps />
             <Title title="Some featured projects" />
-            <Project title="Project name" number="1"/>
-            <Project title="Project name" number="2"/>
-            <Project title="Project name" number="3"/>
+            <div id="projects">
+              <Project title="Project name" number="1"/>
+              <Project title="Project name" number="2"/>
+              <Project title="Project name" number="3"/>
+            </div>
             <Title title="Client Testimonials " />
             <div className="lg:w-15/20 lg:mx-auto justify-start items-start">
                 <div className="lg:grid lg:grid-cols-2  lg:gap-2 gap-5">
@@ -28,7 +30,6 @@ export default function App() {
                     <Testimonial name="Your Name here" title="your Title here" feedback="Your feedback could be featured here! Let's work together, and I'd love
                             to showcase your experience."/>
                 </div>
-
             </div>
             <Contact />
         </div>

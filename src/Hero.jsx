@@ -3,6 +3,13 @@ import Button from "./components/Button";
 import GlowingIcon from "./components/Star";
 
 export default function Hero() {
+  const handleScroll = () => {
+    const projectsSection = document.getElementById("projects");
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div className="relative mt-15 grid grid-cols-4 grid-rows-8 lg:mx-auto lg:w-15/20 lg:grid-cols-6 lg:grid-rows-6">
@@ -23,7 +30,7 @@ export default function Hero() {
             scalable APIs, managing server infrastructures, and integrating them
             with modern frontend systems to create seamless user experiences.
           </p>
-          <Button title="View Projects" />
+          <Button title="View Projects" onClick={handleScroll} />
         </div>
         <div className="absolute top-16.5 left-3/4 -translate-x-1/2 transform lg:top-15.5 lg:left-5/6 lg:w-9">
           <GlowingIcon  />
@@ -39,7 +46,6 @@ export default function Hero() {
         <div className="h-20 border-[0.5px] opacity-20"></div>
         <div className="h-20 border-[0.5px] opacity-20"></div>
         <div className="h-20 border-[0.5px] opacity-20"></div>
-        <div className="hidden h-20 border-[0.5px] opacity-20 lg:block"></div>
         <div className="hidden h-20 border-[0.5px] opacity-20 lg:block"></div>
         <div className="hidden h-20 border-[0.5px] opacity-20 lg:block"></div>
         <div className="hidden h-20 border-[0.5px] opacity-20 lg:block"></div>
