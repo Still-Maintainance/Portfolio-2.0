@@ -64,7 +64,7 @@ export default function Contact() {
       )}
 
       <div className="mt-24 mb-10 flex w-19/20 items-center justify-between">
-        <div className="flex items-center justify-center gap-x-2">
+        <div className="flex items-center justify-center gap-x-2 hidden lg:block">
           <img src={ico} alt="Group" width={35} />
           <h1 className="px-2 font-['Poppins'] text-xl">Farissi</h1>
         </div>
@@ -88,7 +88,7 @@ export default function Contact() {
             />
           </div>
         </div>
-        <a href="/My CV.pdf" download="Farissi-CV.pdf">
+        <a href="/My CV.pdf" download="Farissi-CV.pdf " className="hidden lg:block">
           <Button title="Download CV" />
         </a>
       </div>
