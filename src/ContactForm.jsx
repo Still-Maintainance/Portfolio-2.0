@@ -1,8 +1,7 @@
-import Button from "./components/Button";
 
 const ContactForm = () => {
   return (
-    <div className="group relative rounded-lg bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] transition-all duration-300">
+    <div className="relative rounded-lg bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
       <form className="rounded-lg bg-[#151515] p-6 space-y-4">
         <div className="space-y-2">
           <label htmlFor="name" className="block text-sm font-medium">
@@ -41,7 +40,14 @@ const ContactForm = () => {
         </div>
 
         <div className="flex justify-end">
-          <Button title="Send Message" onClick={() => console.log('Send message')} />
+          <div className="group relative rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] transition-all duration-300 hover:shadow-lg hover:shadow-[#7A87FB]/50">
+            <button 
+              type="submit"
+              className="cursor-pointer rounded-full bg-[#101111] from-[#7A87FB] to-[#FFD49C] p-3 px-6 font-semibold text-white group-hover:bg-gradient-to-r"
+            >
+              Send Message
+            </button>
+          </div>
         </div>
       </form>
     </div>

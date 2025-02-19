@@ -15,34 +15,37 @@ export default function Contact() {
 
   return (
     <div className="text-text-sm mx-auto flex w-13/14 flex-col items-start justify-start gap-5 lg:mx-auto lg:mt-20 lg:w-15/20">
-      <div className="flex w-full justify-between lg:w-19/20">
-        <div className="flex flex-col lg:flex-row lg:justify-between">
-          <div className="flex flex-col lg:w-150">
-            <Title
-              title="Have idea about project?"
-              className={"mt-12 mb-12 ml-0 flex items-center md:w-15/20"}
-            />
-            <div className="flex flex-col items-start justify-start gap-5">
-              <p className="mt-4 mb-5 lg:max-w-100">
-                I&apos;d love to hear from you! Feel free to reach out for
-                questions, collaboration, or just to connect.
-              </p>
-              <div className="flex gap-4">
-                <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
-                  <button
-                    onClick={() => setShowForm(!showForm)}
-                    className="rounded-full bg-gradient-to-r from-[#7A87FB] to-[#FFD49C] p-2 px-6 font-semibold text-[#101111]"
-                  >
-                    Send me a message
-                  </button>
+      <div className="flex flex-col">
+        <div className="flex w-full  lg:gap-70">
+          <div className="flex flex-col lg:flex-row lg:justify-between">
+            <div className="flex flex-col lg:w-187">
+              <Title
+                title="Have idea about project?"
+                className={"mt-12 mb-5 ml-0 flex items-center md:w-15/20"}
+              />
+              <div className="flex flex-col items-start justify-start gap-5">
+                <p className="mt-4 mb-5 lg:max-w-200">
+                  I&apos;d love to hear from you! Feel free to reach out for
+                  questions, collaboration, or just to connect.
+                </p>
+                <div className="flex gap-4 lg:hidden">
+                  <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
+                    <button
+                      onClick={() => setShowForm(!showForm)}
+                      className="rounded-full bg-gradient-to-r from-[#7A87FB] to-[#FFD49C] p-2 px-6 font-semibold text-[#101111]"
+                    >
+                      Send me a message
+                    </button>
+                  </div>
                 </div>
+              </div>
+              <div className="hidden w-full lg:block">
+                <ContactForm />
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="hidden w-full lg:block">
-          <ContactForm />
+          <Style />
         </div>
       </div>
 
@@ -67,25 +70,21 @@ export default function Contact() {
         </div>
         <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
           <div className="flex gap-5 rounded-full bg-[#1C1C1C]">
-            <Icone 
-              src={email} 
-              alt="Email" 
-              href="mailto:hamzafarissi7@gmail.com" 
+            <Icone
+              src={email}
+              alt="Email"
+              href="mailto:hamzafarissi7@gmail.com"
             />
-            <Icone 
-              src={link} 
-              alt="LinkedIn" 
-              href="https://www.linkedin.com/in/hamza-farissi212001/" 
+            <Icone
+              src={link}
+              alt="LinkedIn"
+              href="https://www.linkedin.com/in/hamza-farissi212001/"
             />
-            <Icone 
-              src={github} 
-              alt="GitHub" 
-              href="https://github.com/roxxe3" 
-            />
-            <Icone 
-              src={twiter} 
-              alt="Twitter" 
-              href="https://x.com/HamzaFarissi0" 
+            <Icone src={github} alt="GitHub" href="https://github.com/roxxe3" />
+            <Icone
+              src={twiter}
+              alt="Twitter"
+              href="https://x.com/HamzaFarissi0"
             />
           </div>
         </div>
@@ -100,11 +99,11 @@ export default function Contact() {
 // First, modify the Icone component to accept href prop
 export function Icone({ src, alt, href }) {
   return (
-    <a 
+    <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="rounded-full bg-[#292929] px-5 py-2.5 hover:bg-[#363636] transition-colors"
+      className="rounded-full bg-[#292929] px-5 py-2.5 transition-colors hover:bg-[#363636]"
     >
       <img width={24} src={src} alt={alt} />
     </a>
@@ -115,7 +114,7 @@ export function Style() {
   return (
     <div
       data-layer="Frame 1597884173"
-      className="Frame1597884173 relative hidden h-80 w-40 lg:block"
+      className="Frame1597884173 relative hidden h-80 w-40 lg:block mt-30"
     >
       <div
         data-layer="Line 134"
