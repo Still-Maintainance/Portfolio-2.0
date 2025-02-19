@@ -11,18 +11,17 @@ export default function Navbar() {
           <div className="m-1 rounded-full bg-[#292929] px-4 transition-all duration-300 hover:scale-110 cursor-pointer">
             <img width={37} src={homeIcon} alt="Home" className="transition-transform duration-300" />
           </div>
-          <Navitem className="transition-all duration-300 hover:text-[#FFD49C] hover:scale-105">About</Navitem>
-          <Navitem className="transition-all duration-300 hover:text-[#FFD49C] hover:scale-105">Projects</Navitem>
-          <Navitem className="mr-8 transition-all duration-300 hover:text-[#FFD49C] hover:scale-105">Contact me</Navitem>
+          <Navitem href="#projects" className="transition-all duration-300 hover:text-[#FFD49C] hover:scale-105">Projects</Navitem>
+          <Navitem href="#contact" className="mr-8 transition-all duration-300 hover:text-[#FFD49C] hover:scale-105">Contact me</Navitem>
         </nav>
       </div>
     </>
   );
 }
 
-export function Navitem({ children, className }) {
+export function Navitem({ children, className, href }) {
   return (
-    <a href="#" className={`text-white ${className} text-shadow mx-1`}>
+    <a href={href} className={`text-white ${className} text-shadow mx-1`}>
       {children}
     </a>
   );

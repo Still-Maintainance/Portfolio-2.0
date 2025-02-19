@@ -14,7 +14,7 @@ export default function Contact() {
   const [showForm, setShowForm] = useState(false);
 
   return (
-    <div className="text-text-sm mx-auto flex w-13/14 flex-col items-start justify-start gap-5 lg:mx-auto lg:mt-20 lg:w-15/20">
+    <div className="text-text-sm mx-auto flex w-13/14 flex-col items-start justify-start gap-5 lg:mx-auto lg:mt-20 lg:w-15/20" id="contact">
       <div className="flex flex-col">
         <div className="flex w-full  lg:gap-70">
           <div className="flex flex-col lg:flex-row lg:justify-between">
@@ -64,11 +64,11 @@ export default function Contact() {
       )}
 
       <div className="mt-24 mb-10 flex w-19/20 items-center justify-between">
-        <div className="flex items-center justify-center gap-x-2 hidden lg:block">
+        <div className="hidden lg:flex items-center justify-center gap-x-2">
           <img src={ico} alt="Group" width={35} />
           <h1 className="px-2 font-['Poppins'] text-xl">Farissi</h1>
         </div>
-        <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
+        <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] mx-auto">
           <div className="flex gap-5 rounded-full bg-[#1C1C1C]">
             <Icone
               src={email}
