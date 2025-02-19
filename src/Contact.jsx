@@ -7,7 +7,6 @@ import portal from "./assets/Portal.svg";
 import Title from "./Title";
 import ContactForm from "./ContactForm";
 import { useState } from "react";
-import cv from "./assets/My CV.pdf";
 import Button from "./components/Button";
 import email from "./assets/email.svg";
 
@@ -90,7 +89,7 @@ export default function Contact() {
             />
           </div>
         </div>
-        <a href={cv} download="Farissi-CV.pdf">
+        <a href="/My CV.pdf" download="Farissi-CV.pdf">
           <Button title="Download CV" />
         </a>
       </div>
