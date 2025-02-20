@@ -21,12 +21,12 @@ export default function Project({ title, number, description, technologies, imag
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <div className="absolute bottom-4 left-4 flex gap-3">
-              <div className="group relative rounded-md bg-gradient-to-r from-[#7A87FB] to-[#FFD49C] p-[2px] transition-all duration-300 hover:shadow-lg">
+              <div className="group relative rounded-md bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] transition-all duration-300 hover:shadow-lg hover:shadow-[#7A87FB]/50">
                 <a 
                   href={demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block px-4 py-2 rounded-md bg-[#00000000] from-[#FFD49C] to-[#7A87FB] font-medium text-white hover:bg-gradient-to-r"
+                  className="block px-4 py-2 rounded-md bg-[#101111] from-[#7A87FB] to-[#FFD49C] font-medium text-white hover:bg-gradient-to-r"
                 >
                   Live Demo
                 </a>
