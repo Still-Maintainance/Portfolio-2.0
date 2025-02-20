@@ -1,57 +1,121 @@
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 
-const ContactForm = () => {
+export default function ContactForm() {
+  const [formState, setFormState] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 
+          'Content-Type': 'application/x-www-form-urlencoded' 
+        },
+        body: encode({
+          'form-name': 'contact',
+          ...formState
+        })
+      });
+      
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormState({ name: '', email: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      console.error('Form submission error:', error);
+    }
+    
+    setIsSubmitting(false);
+  };
+
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  };
+
   return (
-    <div className="relative rounded-lg bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
-      <form className="rounded-lg bg-[#151515] p-6 space-y-4">
-        <div className="space-y-2">
-          <label htmlFor="name" className="block text-sm font-medium">
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            className="w-full rounded-md bg-[#1C1C1C] p-2 border border-[#292929] focus:border-[#7A87FB] focus:outline-none"
-            placeholder="Your name"
-          />
-        </div>
+    <motion.form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      onSubmit={handleSubmit}
+      className="space-y-2 sm:space-y-5 w-full max-w-2xl mx-auto px-4 sm:px-6"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      
+      <input
+        type="text"
+        name="name"
+        value={formState.name}
+        onChange={(e) => setFormState({...formState, name: e.target.value})}
+        placeholder="Your Name"
+        required
+        className="w-full p-2.5 sm:p-3 text-sm sm:text-base bg-[#151515] rounded-lg border border-[#7A87FB]/20 focus:border-[#7A87FB] outline-none transition-colors text-white/90"
+      />
 
-        <div className="space-y-2">
-          <label htmlFor="email" className="block text-sm font-medium">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email" 
-            className="w-full rounded-md bg-[#1C1C1C] p-2 border border-[#292929] focus:border-[#7A87FB] focus:outline-none"
-            placeholder="your.email@example.com"
-          />
-        </div>
+      <input
+        type="email"
+        name="email"
+        value={formState.email}
+        onChange={(e) => setFormState({...formState, email: e.target.value})}
+        placeholder="Your Email"
+        required
+        className="w-full p-2.5 sm:p-3 text-sm sm:text-base bg-[#151515] rounded-lg border border-[#7A87FB]/20 focus:border-[#7A87FB] outline-none transition-colors text-white/90"
+      />
 
-        <div className="space-y-2">
-          <label htmlFor="message" className="block text-sm font-medium">
-            Message
-          </label>
-          <textarea
-            id="message"
-            rows={4}
-            className="w-full rounded-md bg-[#1C1C1C] p-2 border border-[#292929] focus:border-[#7A87FB] focus:outline-none"
-            placeholder="Your message..."
-          />
-        </div>
+      <textarea
+        name="message"
+        value={formState.message}
+        onChange={(e) => setFormState({...formState, message: e.target.value})}
+        placeholder="Type your message here..."
+        required
+        rows="4"
+        className="w-full p-2.5 sm:p-3 text-sm sm:text-base bg-[#151515] rounded-lg border border-[#7A87FB]/20 focus:border-[#7A87FB] outline-none transition-colors text-white/90 resize-y min-h-[100px]"
+      />
 
-        <div className="flex justify-end">
-          <div className="group relative rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] transition-all duration-300 hover:shadow-lg hover:shadow-[#7A87FB]/50">
-            <button 
-              type="submit"
-              className="cursor-pointer rounded-full bg-[#101111] from-[#7A87FB] to-[#FFD49C] p-3 px-6 font-semibold text-white group-hover:bg-gradient-to-r"
-            >
-              Send Message
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
+      <button
+        type="submit"
+        disabled={isSubmitting}
+        className="w-full py-2.5 sm:py-3 px-4 sm:px-6 bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] rounded-lg font-medium text-sm sm:text-base text-white hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        {isSubmitting ? 'Sending...' : 'Send Message'}
+      </button>
+
+      {submitStatus === 'success' && (
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="text-sm sm:text-base text-green-400 text-center mt-4"
+        >
+          Message sent successfully!
+        </motion.p>
+      )}
+
+      {submitStatus === 'error' && (
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="text-sm sm:text-base text-red-400 text-center mt-4"
+        >
+          Failed to send message. Please try again.
+        </motion.p>
+      )}
+    </motion.form>
   );
-};
-
-export default ContactForm;
+}
