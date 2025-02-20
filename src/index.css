@@ -1,56 +1,67 @@
 @import "tailwindcss";
 
-@theme {
-    --animation-float: float 6s ease-in-out infinite;
-    --animation-float-delayed: float 6s ease-in-out 3s infinite;
-    --animation-glow: glow 2s ease-in-out infinite;
-    --animation-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    --animation-ping-slow: ping 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  
-    --keyframe-float: 
-      0%, 100% { transform: translateY(0) rotate(0); }
-      50% { transform: translateY(-20px) rotate(180deg); }
-  
-    --keyframe-glow:
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.6; }
-  
-    --drop-shadow-glow: 0 0 8px rgba(122, 135, 251, 0.5);
-  }
 
-@layer utilities {
-    .font-display {
-        font-family: var(--font-display);
-    }
-    .text-shadow {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.89);
-    }
+/* Custom CSS Variables moved to :root */
+:root {
+  --animation-float: float 6s ease-in-out infinite;
+  --animation-float-delayed: float 6s ease-in-out 3s infinite;
+  --animation-glow: glow 2s ease-in-out infinite;
+  --animation-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animation-ping-slow: ping 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --drop-shadow-glow: 0 0 8px rgba(122, 135, 251, 0.5);
+  --font-display: 'Poppins', sans-serif;
 }
 
-:root {
-    --font-display: 'Poppins', sans-serif;
+/* Tailwind custom utilities */
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.89);
+  }
 }
 
 body {
-    font-family: var(--font-display);
+  font-family: var(--font-display);
 }
 
-
+/* Marquee Animation */
 @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0);
   }
-  
-  .animate-marquee {
-    animation: marquee 30s linear infinite;
-}
-@media (max-width: 768px) {
-    .animate-marquee {
-        animation-duration: 30s;
-    }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .animate-marquee {
+    animation-duration: 30s;
+  }
+}
+
+/* Float Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(180deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}

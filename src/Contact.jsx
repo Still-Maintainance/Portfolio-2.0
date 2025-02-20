@@ -78,7 +78,7 @@ export default function Contact() {
           </div>
 
           <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
-            <div className="flex gap-5 rounded-full bg-[#1C1C1C]/90 backdrop-blur-sm px-2">
+            <nav className="flex items-center justify-between gap-x-8 rounded-full bg-[#1C1C1C] px-1 py-1">
               <Icone
                 src={email}
                 alt="Email"
@@ -99,7 +99,7 @@ export default function Contact() {
                 alt="Twitter"
                 href="https://x.com/HamzaFarissi0"
               />
-            </div>
+            </nav>
           </div>
 
           <a href="/My CV.pdf" download="Farissi-CV.pdf" className="hidden lg:block">
