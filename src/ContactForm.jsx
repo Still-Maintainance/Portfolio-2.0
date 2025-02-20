@@ -21,14 +21,13 @@ export default function ContactForm() {
         body: encode({
           "form-name": "contact",
           ...formState,
-          "bot-field": "", // Add honeypot field
+          "bot-field": "",
         }),
       });
       
       if (response.ok) {
         setSubmitStatus('success');
         setFormState({ name: '', email: '', message: '' });
-        // Optional: Scroll to success message
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
       } else {
         throw new Error('Form submission failed');
