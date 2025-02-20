@@ -32,10 +32,10 @@ export default function Hero() {
           </p>
           <Button title="View Projects" onClick={handleScroll} />
         </div>
-        <div className="absolute top-16.5 left-3/4 -translate-x-1/2 transform lg:top-15.5 lg:left-5/6 lg:w-9">
+        <div className="absolute top-16.5 left-3/4 -translate-x-1/2 transform lg:top-15.5 lg:left-5/6 lg:w-9 z-10">
           <GlowingIcon  />
         </div>
-        <div className="absolute bottom-36.5 left-1/4 -translate-x-1/2 transform lg:bottom-55.5 lg:left-1/6 lg:w-9">
+        <div className="absolute bottom-36.5 left-1/4 -translate-x-1/2 transform lg:bottom-55.5 lg:left-1/6 lg:w-9 z-10">
           <GlowingIcon />
         </div>
         <div className="h-20 border-[0.5px] opacity-20"></div>

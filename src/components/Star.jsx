@@ -1,12 +1,12 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
-// eslint-disable-next-line react/prop-types
 const GlowingIcon = ({ className = '', size = 14, ...props }) => {
   const [isHovered, setIsHovered] = useState(false);
-  const gradientId = `starGradient-${Math.random()}`; // Unique ID
+  const gradientId = `starGradient-${Math.random()}`;
 
   return (
-    <svg
+    <motion.svg
       width={size}
       height={size}
       viewBox="0 0 14 14"
@@ -20,15 +20,14 @@ const GlowingIcon = ({ className = '', size = 14, ...props }) => {
         md:w-6 md:h-6 
         lg:w-9 lg:h-9
         cursor-pointer 
-        transition-transform duration-300 
+        transition-all duration-300 ease-in-out
         ${className} 
-        ${isHovered ? 'scale-125' : 'scale-100'}
-        hover:animate-pulse
+        ${isHovered ? 'scale-110' : 'scale-100'}
       `}
       style={{
         filter: isHovered 
-          ? 'drop-shadow(0 0 12px rgba(122, 135, 251, 1))' 
-          : 'drop-shadow(0 0 4px rgba(122, 135, 251, 0.3))',
+          ? 'drop-shadow(0 0 8px rgba(122, 135, 251, 0.5))' 
+          : 'none',
       }}
       {...props}
     >
@@ -52,7 +51,7 @@ const GlowingIcon = ({ className = '', size = 14, ...props }) => {
         d="M7 14C6.986 10.1388 3.85739 7.01297 0 7.01297C3.86599 7.01297 7 3.87312 7 0C7.01394 3.86124 10.1426 6.98703 14 6.98703C10.1339 6.98703 7 10.1269 7 14Z"
         fill={isHovered ? `url(#${gradientId})` : '#FFFFFF'}
       />
-    </svg>
+    </motion.svg>
   );
 };
 
