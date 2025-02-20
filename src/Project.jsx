@@ -1,23 +1,121 @@
 /* eslint-disable react/prop-types */
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-// eslint-disable-next-line react/prop-types
-export default function Project({ title, number, description, technologies, image, demoLink, githubLink }) {
+export default function Project({ 
+  title, 
+  number, 
+  description, 
+  technologies, 
+  images = [], // Set default empty array
+  demoLink, 
+  githubLink 
+}) {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Guard clause for empty images array
+  if (!images || images.length === 0) {
+    return null; // Or render a placeholder/fallback
+  }
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  // Handle keyboard navigation
+  const handleKeyDown = (e) => {
+    if (e.key === 'ArrowLeft') prevImage();
+    if (e.key === 'ArrowRight') nextImage();
+  };
+
   return (
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className="relative mx-auto mt-8 sm:mt-10 w-full sm:w-11/12 lg:w-14/20 px-4 sm:px-0" // Added padding for mobile
+      onKeyDown={handleKeyDown}
+      tabIndex={0}
     >
       <div className="relative flex w-full flex-col items-start justify-center gap-6 sm:gap-8 bg-gradient-to-br from-[#151515] to-[#1c1c1c] p-5 sm:p-8 rounded-lg border border-[#7A87FB]/20 md:flex-row hover:border-[#7A87FB] transition-all duration-300">
-        {/* Project Image */}
+        {/* Project Image Slider */}
         <div className="relative w-full overflow-hidden rounded-lg md:w-1/2 lg:w-120 aspect-video sm:aspect-auto lg:h-120 group">
-          <img 
-            src={image} 
-            alt={title}
-            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          />
+          <motion.div
+            initial={false}
+            animate={{ x: `-${currentImageIndex * 100}%` }}
+            transition={{
+              type: "spring",
+              stiffness: 200,
+              damping: 25,    
+              mass: 0.5,     
+              velocity: 2     
+            }}
+            className="flex w-full h-full"
+          >
+            {images.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`${title} screenshot ${index + 1}`}
+                className="w-full h-full object-cover flex-shrink-0"
+                loading={index === 0 ? "eager" : "lazy"}
+                onError={(e) => {
+                  e.target.src = 'fallback-image-path.jpg';
+                  e.target.onerror = null;
+                }}
+              />
+            ))}
+          </motion.div>
+
+          {/* Navigation Buttons */}
+          {images.length > 1 && (
+            <>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  prevImage();
+                }}
+                className="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white/90 hover:bg-black/70 transition-colors z-20 cursor-pointer"
+                aria-label="Previous image"
+              >
+                <FaChevronLeft className="w-4 h-4" />
+              </button>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  nextImage();
+                }}
+                className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white/90 hover:bg-black/70 transition-colors z-20 cursor-pointer"
+                aria-label="Next image"
+              >
+                <FaChevronRight className="w-4 h-4" />
+              </button>
+
+              {/* Dots Indicator */}
+              <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1">
+                {images.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`w-1.5 h-1.5 rounded-full transition-colors ${
+                      index === currentImageIndex
+                        ? 'bg-white'
+                        : 'bg-white/50 hover:bg-white/75'
+                    }`}
+                    aria-label={`Go to image ${index + 1}`}
+                  />
+                ))}
+              </div>
+            </>
+          )}
+
           {/* Overlay with buttons */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <div className="absolute bottom-4 left-4 flex gap-2 sm:gap-3">

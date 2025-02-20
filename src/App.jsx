@@ -16,31 +16,44 @@ export default function App() {
       <Title title="Some featured projects" />
       <div id="projects">
         <Project
-          title="Project Name"
+          title="Assembly: Endgame"
           number="1"
-          description="A detailed description of your project and what it does. Explain the main features and your role in development."
-          technologies={["React", "TailwindCSS", "Node.js", "MongoDB"]}
-          image="/path-to-project-image.jpg"
-          demoLink="https://your-demo-link.com"
-          githubLink="https://github.com/your-username/project-repo"
+          description="Assembly-Endgame is a word guessing game where players must guess a randomly selected word within 8 attempts to prevent the programming world from being taken over by Assembly language. The game features random word selection, letter guessing, life tracking, and win/lose conditions."
+          technologies={["React", "CSS"]}
+          images={[
+            "src/assets/projects/assembly2.png",
+            "src/assets/projects/assembly.png",
+            "src/assets/projects/assembly-win.png",
+            "src/assets/projects/assembly-lost.png",
+          ]}
+          demoLink="https://assembly-endgame-160527.netlify.app/"
+          githubLink="https://github.com/roxxe3/Assembly-Endgame"
         />
         <Project
-          title="Project Name"
-          number="2"
-          description="A detailed description of your project and what it does. Explain the main features and your role in development."
-          technologies={["React", "TailwindCSS", "Node.js", "MongoDB"]}
-          image="/path-to-project-image.jpg"
-          demoLink="https://your-demo-link.com"
-          githubLink="https://github.com/your-username/project-repo"
+          title="Assembly: Endgame"
+          number="1"
+          description="Assembly-Endgame is a word guessing game where players must guess a randomly selected word within 8 attempts to prevent the programming world from being taken over by Assembly language. The game features random word selection, letter guessing, life tracking, and win/lose conditions."
+          technologies={["React", "CSS"]}
+          images={[
+            "src/assets/projects/assembly.png",
+            "src/assets/projects/assembly2.png",
+            "src/assets/projects/assembly.png",
+          ]}
+          demoLink="https://assembly-endgame-160527.netlify.app/"
+          githubLink="https://github.com/roxxe3/Assembly-Endgame"
         />
         <Project
-          title="Project Name"
-          number="3"
-          description="A detailed description of your project and what it does. Explain the main features and your role in development."
-          technologies={["React", "TailwindCSS", "Node.js", "MongoDB"]}
-          image="/path-to-project-image.jpg"
-          demoLink="https://your-demo-link.com"
-          githubLink="https://github.com/your-username/project-repo"
+          title="Assembly: Endgame"
+          number="1"
+          description="Assembly-Endgame is a word guessing game where players must guess a randomly selected word within 8 attempts to prevent the programming world from being taken over by Assembly language. The game features random word selection, letter guessing, life tracking, and win/lose conditions."
+          technologies={["React", "CSS"]}
+          images={[
+            "src/assets/projects/assembly.png",
+            "src/assets/projects/assembly2.png",
+            "src/assets/projects/assembly.png",
+          ]}
+          demoLink="https://assembly-endgame-160527.netlify.app/"
+          githubLink="https://github.com/roxxe3/Assembly-Endgame"
         />
       </div>
       <Title title="Skills & Technologies" />
