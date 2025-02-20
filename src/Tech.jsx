@@ -55,35 +55,37 @@ const technologies = [
 
 export default function TechStack() {
   return (
-    <div className="mx-auto my-20 w-15/20">
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div className="mx-auto my-12 sm:my-20 w-full px-4 sm:px-6 sm:w-15/20">
+      <div className="grid gap-4 sm:gap-8 md:grid-cols-2 lg:grid-cols-3"> {/* Reduced gap on mobile */}
         {technologies.map((tech, index) => (
           <motion.div
             key={tech.category}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="group rounded-3xl bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[1px] hover:shadow-lg hover:shadow-[#7A87FB]/20"
+            className="group rounded-xl sm:rounded-3xl bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[1px] hover:shadow-lg hover:shadow-[#7A87FB]/20"
           >
-            <div className="h-full rounded-3xl bg-[#151515] p-6 transition-all duration-300">
-              <h3 className="mb-2 text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FFD49C] to-[#7A87FB]">
+            <div className="h-full rounded-xl sm:rounded-3xl bg-[#151515] p-3 sm:p-6 transition-all duration-300"> {/* Reduced padding on mobile */}
+              <h3 className="mb-2 text-base sm:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FFD49C] to-[#7A87FB]">
                 {tech.category}
               </h3>
-              <p className="text-sm text-gray-400 mb-6">{tech.description}</p>
+              <p className="text-xs sm:text-sm text-gray-400 mb-3 sm:mb-6">{tech.description}</p>
               
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-3 gap-1.5 sm:gap-3"> {/* Changed to 3 columns with reduced gap on mobile */}
                 {tech.skills.map((skill) => (
                   <motion.div
                     key={skill.name}
                     whileHover={{ scale: 1.05 }}
-                    className={`flex flex-col items-center justify-center p-3 rounded-xl ${
+                    className={`flex flex-col items-center justify-center p-2 sm:p-3 rounded-lg sm:rounded-xl ${
                       skill.type === 'primary' 
                         ? 'bg-[#292929] hover:bg-[#363636]' 
                         : 'bg-[#1C1C1C] hover:bg-[#292929]'
                     } transition-colors duration-200`}
                   >
-                    <skill.icon className="w-8 h-8 mb-2 text-gray-300" />
-                    <span className="text-xs text-gray-300">{skill.name}</span>
+                    <skill.icon className="w-6 h-6 sm:w-8 sm:h-8 mb-1 sm:mb-2 text-gray-300" />
+                    <span className="text-[10px] sm:text-xs text-gray-300 text-center">
+                      {skill.name}
+                    </span>
                   </motion.div>
                 ))}
               </div>
