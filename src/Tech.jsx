@@ -11,9 +11,10 @@ import {
   SiTailwindcss, 
   SiTypescript, 
   SiRedux,
-  SiExpress, 
+  SiDjango, 
   SiMongodb, 
-  SiPostgresql 
+  SiPostgresql,
+  SiFastapi
 } from 'react-icons/si';
 import { TbBrandVscode } from 'react-icons/tb';
 
@@ -34,7 +35,8 @@ const technologies = [
     description: "Developing scalable server-side applications",
     skills: [
       { name: "Node.js", icon: FaNode, type: "primary" },
-      { name: "Express", icon: SiExpress, type: "primary" },
+      { name: "Django", icon: SiDjango, type: "primary" },
+      { name: "FastAPI", icon: SiFastapi, type: "primary" },
       { name: "MongoDB", icon: SiMongodb, type: "primary" },
       { name: "PostgreSQL", icon: SiPostgresql, type: "secondary" },
     ]
