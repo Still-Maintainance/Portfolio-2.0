@@ -47,7 +47,7 @@ export default function About() {
 
   return (
     <div className="mx-auto max-w-6xl px-6 bg-[#101111] text-gray-300 relative" id="about">
-      {/* Background Portals - existing code */}
+      
       <Portal
         src={portalImage}
         className="absolute top-200 right-30 w-32 opacity-10 rotate-50 pointer-events-none"
@@ -57,7 +57,7 @@ export default function About() {
         className="absolute bottom-10 left-15 w-32 opacity-10 -rotate-50 pointer-events-none"
       />
 
-      {/* About Me Section - existing code */}
+      {/* About Me Section */}
       <div className="max-w-4xl mx-auto mb-24">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -65,7 +65,7 @@ export default function About() {
           transition={{ duration: 0.5 }}
           className="p-8 md:p-10 bg-[#151515] rounded-xl shadow-lg border border-transparent hover:border-[#7A87FB] transition-all duration-300"
         >
-          {/* About Me Section */}
+
           <div className="mb-12">
             <p className="text-lg text-gray-300">
               I'm <span className="bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] bg-clip-text text-transparent font-semibold">
