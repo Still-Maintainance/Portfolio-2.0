@@ -63,40 +63,54 @@ export default function Contact() {
         </div>
       )}
 
-      <div className="mt-24 mb-10 flex w-19/20 items-center justify-between">
-        <div className="hidden lg:flex items-center justify-center gap-x-2">
-          <img src={ico} alt="Group" width={35} />
-          <h1 className="px-2 font-['Poppins'] text-xl">Farissi</h1>
-        </div>
-        <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] mx-auto">
-          <div className="flex gap-5 rounded-full bg-[#1C1C1C]">
-            <Icone
-              src={email}
-              alt="Email"
-              href="mailto:hamzafarissi7@gmail.com"
+      <footer className="w-full border-t border-[#7A87FB]/10 bg-[#101111]/80 backdrop-blur-md mt-20">
+        <div className="mx-auto px-4 py-6 flex items-center justify-between">
+          <div className="hidden lg:flex items-center justify-center gap-x-2">
+            <img 
+              src={ico} 
+              alt="Group" 
+              width={35} 
+              className="transition-transform duration-300 hover:scale-110"
             />
-            <Icone
-              src={link}
-              alt="LinkedIn"
-              href="https://www.linkedin.com/in/hamza-farissi212001/"
-            />
-            <Icone src={github} alt="GitHub" href="https://github.com/roxxe3" />
-            <Icone
-              src={twiter}
-              alt="Twitter"
-              href="https://x.com/HamzaFarissi0"
-            />
+            <h1 className="px-2 font-['Poppins'] text-xl bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] bg-clip-text text-transparent">
+              Farissi
+            </h1>
           </div>
+
+          <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
+            <div className="flex gap-5 rounded-full bg-[#1C1C1C]/90 backdrop-blur-sm px-2">
+              <Icone
+                src={email}
+                alt="Email"
+                href="mailto:hamzafarissi7@gmail.com"
+              />
+              <Icone
+                src={link}
+                alt="LinkedIn"
+                href="https://www.linkedin.com/in/hamza-farissi212001/"
+              />
+              <Icone 
+                src={github} 
+                alt="GitHub" 
+                href="https://github.com/roxxe3" 
+              />
+              <Icone
+                src={twiter}
+                alt="Twitter"
+                href="https://x.com/HamzaFarissi0"
+              />
+            </div>
+          </div>
+
+          <a href="/My CV.pdf" download="Farissi-CV.pdf" className="hidden lg:block">
+            <Button title="Download CV" />
+          </a>
         </div>
-        <a href="/My CV.pdf" download="Farissi-CV.pdf " className="hidden lg:block">
-          <Button title="Download CV" />
-        </a>
-      </div>
+      </footer>
     </div>
   );
 }
 
-// First, modify the Icone component to accept href prop
 export function Icone({ src, alt, href }) {
   return (
     <a

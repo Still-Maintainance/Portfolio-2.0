@@ -8,7 +8,7 @@ import Contact from "./Contact";
 import About from "./About";
 export default function App() {
   return (
-    <div>
+    <div className="pt-6.5">
       <Header />
       <Hero />
       <Title title="My Development Workflow" />
