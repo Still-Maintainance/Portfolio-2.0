@@ -34,7 +34,7 @@ export default function App() {
           title="Portfolio 2.0"
           number="2"
           description="A modern, responsive portfolio website built with React, Vite, and TailwindCSS, featuring a sleek dark theme and interactive elements."
-          technologies={["React", "TailwindCSS, Vite, Framer Motion, React Icons, Netlify"]}
+          technologies={["React", "TailwindCSS", "Vite", "Framer Motion", "React Icons", "Netlify"]}
           images={[portfolio, assembly, assemblyWin, assemblyLost]}
           demoLink="https://farissi-hamza.netlify.app/"
           githubLink="https://github.com/roxxe3/Portfolio-2.0"
