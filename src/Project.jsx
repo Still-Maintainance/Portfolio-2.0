@@ -65,7 +65,7 @@ export default function Project({
                 className="w-full h-full object-cover flex-shrink-0"
                 loading={index === 0 ? "eager" : "lazy"}
                 onError={(e) => {
-                  e.target.src = 'fallback-image-path.jpg';
+                  e.target.src = 'https://placehold.co/1200x800/1c1c1c/7A87FB?text=Image+Not+Available';
                   e.target.onerror = null;
                 }}
               />
