@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { motion } from 'framer-motion';
-import Button from './components/Button';
 
 // eslint-disable-next-line react/prop-types
 export default function Project({ title, number, description, technologies, image, demoLink, githubLink }) {
