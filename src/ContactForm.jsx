@@ -15,29 +15,30 @@ export default function ContactForm() {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: { 
-          'Content-Type': 'application/x-www-form-urlencoded' 
-        },
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
-          'form-name': 'contact',
-          ...formState
-        })
+          "form-name": "contact",
+          ...formState,
+          "bot-field": "", // Add honeypot field
+        }),
       });
       
       if (response.ok) {
         setSubmitStatus('success');
         setFormState({ name: '', email: '', message: '' });
+        // Optional: Scroll to success message
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
       } else {
-        setSubmitStatus('error');
+        throw new Error('Form submission failed');
       }
     } catch (error) {
       setSubmitStatus('error');
       console.error('Form submission error:', error);
+    } finally {
+      setIsSubmitting(false);
     }
-    
-    setIsSubmitting(false);
   };
 
   const encode = (data) => {

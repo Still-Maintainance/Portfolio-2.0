@@ -15,10 +15,11 @@
   </head>
   <body class="text-white font-(Poppins, sans-serif) bg-[#101111]">
     <div id="root"></div>
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <form name="contact" netlify netlify-honeypot="bot-field" action="/" hidden>
       <input type="text" name="name" />
       <input type="email" name="email" />
       <textarea name="message"></textarea>
+      <input name="bot-field" /> <!-- Add honeypot field -->
     </form>
     <script type="module" src="/src/main.jsx"></script>
   </body>
