@@ -46,15 +46,15 @@ export default function About() {
   ];
 
   return (
-    <div className="mx-auto max-w-6xl px-6 py-20 bg-[#101111] text-gray-300 relative">
+    <div className="mx-auto max-w-6xl px-6 bg-[#101111] text-gray-300 relative" id="about">
       {/* Background Portals - existing code */}
       <Portal
         src={portalImage}
-        className="absolute top-20 -right-0 w-32 opacity-10 rotate-45 pointer-events-none"
+        className="absolute top-200 right-30 w-32 opacity-10 rotate-50 pointer-events-none"
       />
       <Portal
         src={portalImage}
-        className="absolute bottom-20 -left-10 w-32 opacity-10 -rotate-45 pointer-events-none"
+        className="absolute bottom-10 left-15 w-32 opacity-10 -rotate-50 pointer-events-none"
       />
 
       {/* About Me Section - existing code */}
@@ -137,7 +137,7 @@ export default function About() {
               key={index}
               initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}  // Add this to ensure animation triggers
+              viewport={{ once: true }} 
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className={`relative flex ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 md:gap-16`}
             >
