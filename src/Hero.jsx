@@ -12,7 +12,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className="relative mt-15 grid grid-cols-4 grid-rows-8 lg:mx-auto lg:w-15/20 lg:grid-cols-6 lg:grid-rows-6">
+      <div id="home" className="relative mt-15 grid grid-cols-4 grid-rows-8 lg:mx-auto lg:w-15/20 lg:grid-cols-6 lg:grid-rows-6">
         <div className="h-20 border-[0.5px] opacity-20"></div>
         <div className="h-20 border-[0.5px] opacity-20"></div>
         <div className="h-20 border-[0.5px] opacity-20"></div>
