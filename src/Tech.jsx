@@ -56,7 +56,7 @@ const technologies = [
 export default function TechStack() {
   return (
     <div className="mx-auto my-12 sm:my-20 w-full px-4 sm:px-6 sm:w-15/20">
-      <div className="grid gap-4 sm:gap-8 md:grid-cols-2 lg:grid-cols-3"> {/* Reduced gap on mobile */}
+      <div className="grid gap-4 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
         {technologies.map((tech, index) => (
           <motion.div
             key={tech.category}
@@ -71,7 +71,7 @@ export default function TechStack() {
               </h3>
               <p className="text-xs sm:text-sm text-gray-400 mb-3 sm:mb-6">{tech.description}</p>
               
-              <div className="grid grid-cols-3 gap-1.5 sm:gap-3"> {/* Changed to 3 columns with reduced gap on mobile */}
+              <div className="grid grid-cols-3 gap-1.5 sm:gap-3">
                 {tech.skills.map((skill) => (
                   <motion.div
                     key={skill.name}

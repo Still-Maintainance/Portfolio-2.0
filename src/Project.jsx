@@ -14,9 +14,9 @@ export default function Project({
 }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Guard clause for empty images array
+
   if (!images || images.length === 0) {
-    return null; // Or render a placeholder/fallback
+    return null;
   }
 
   const nextImage = () => {
@@ -27,7 +27,7 @@ export default function Project({
     setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
   };
 
-  // Handle keyboard navigation
+
   const handleKeyDown = (e) => {
     if (e.key === 'ArrowLeft') prevImage();
     if (e.key === 'ArrowRight') nextImage();

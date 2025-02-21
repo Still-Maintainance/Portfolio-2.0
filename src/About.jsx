@@ -58,7 +58,7 @@ export default function About() {
       />
 
       {/* About Me Section */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 mb-12 sm:mb-24"> {/* Added padding and responsive margin */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 mb-12 sm:mb-24">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -127,7 +127,7 @@ export default function About() {
 
       {/* Timeline Section */}
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6">
-        {/* Timeline line - Adjusted for mobile */}
+        
         <div className="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-[#FFD49C] to-[#7A87FB] opacity-30"></div>
         
         <div className="space-y-8 sm:space-y-16">

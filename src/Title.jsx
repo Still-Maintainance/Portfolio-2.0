@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import portal from "./assets/Portal.svg";
 
 export default function Title({ title, className, id }) {

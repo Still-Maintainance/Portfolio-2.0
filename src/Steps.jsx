@@ -31,7 +31,6 @@ export default function Steps() {
 
   return (
     <div className="flex flex-col md:flex-row md:mx-auto md:w-15/20">
-      {/* Timeline numbers - hidden on mobile */}
       <div className="hidden md:flex mx-4 lg:mx-14 w-0 flex-col items-center justify-start">
         {steps.map((step, index) => (
           <div key={index} className="flex flex-col items-center">
@@ -49,7 +48,7 @@ export default function Steps() {
               </div>
             </motion.div>
             {index !== steps.length - 1 && (
-              <div className="h-53 border-l-2 border-dashed border-[#7A87FB]/20"></div> // Increased height to h-40
+              <div className="h-53 border-l-2 border-dashed border-[#7A87FB]/20"></div>
             )}
           </div>
         ))}
@@ -63,7 +62,7 @@ export default function Steps() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="relative mb-20 last:mb-0" // Increased bottom margin
+            className="relative mb-20 last:mb-0"
           >
             {/* Vertical dotted line for mobile */}
             {index !== steps.length - 1 && (
