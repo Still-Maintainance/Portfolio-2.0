@@ -46,7 +46,7 @@ export default function About() {
   ];
 
   return (
-    <div className="mx-auto max-w-6xl px-6 bg-[#101111] text-gray-300 relative" id="about">
+    <div className="mx-auto max-w-6xl px-6 bg-[#101111] text-gray-300 relative">
       
       <Portal
         src={portalImage}

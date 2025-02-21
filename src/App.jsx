@@ -25,8 +25,8 @@ export default function App() {
       <Hero />
       <Title title="My Development Workflow" />
       <Steps />
-      <Title title="Some featured projects" />
-      <div id="projects">
+      <Title title="Some featured projects" id="projects" />
+      <div>
         <Project
           title="Assembly: Endgame"
           number="1"
@@ -58,7 +58,7 @@ export default function App() {
       <Title title="Skills & Technologies" />
 
       <TechStack />
-      <Title title="About Me" />
+      <Title title="About Me" id="about"/>
       <About />
       <Contact />
     </div>

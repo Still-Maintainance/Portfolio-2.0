@@ -52,7 +52,7 @@ export default function ContactForm() {
       method="POST"
       data-netlify="true"
       onSubmit={handleSubmit}
-      className="space-y-2 sm:space-y-5 w-full max-w-2xl mx-auto px-4 sm:px-6"
+      className="space-y-2 sm:space-y-5 w-full max-w-2xl "
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
