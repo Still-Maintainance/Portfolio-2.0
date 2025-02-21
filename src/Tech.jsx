@@ -76,11 +76,7 @@ export default function TechStack() {
                   <motion.div
                     key={skill.name}
                     whileHover={{ scale: 1.05 }}
-                    className={`flex flex-col items-center justify-center p-2 sm:p-3 rounded-lg sm:rounded-xl ${
-                      skill.type === 'primary' 
-                        ? 'bg-[#292929] hover:bg-[#363636]' 
-                        : 'bg-[#1C1C1C] hover:bg-[#292929]'
-                    } transition-colors duration-200`}
+                    className="flex flex-col items-center justify-center p-2 sm:p-3 rounded-lg sm:rounded-xl bg-[#292929] hover:brightness-125 transition-all duration-200"
                   >
                     <skill.icon className="w-6 h-6 sm:w-8 sm:h-8 mb-1 sm:mb-2 text-gray-300" />
                     <span className="text-[10px] sm:text-xs text-gray-300 text-center">
