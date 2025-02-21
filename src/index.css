@@ -65,3 +65,44 @@ body {
     opacity: 0.6;
   }
 }
+
+/* Replace the existing scrollbar styles with these */
+
+/* For Webkit browsers (Chrome, Safari, etc) */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7A87FB;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFD49C;
+}
+
+/* Hide scrollbar buttons (arrows) */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffffee transparent;
+}
+
+/* Make scrollbar thinner on mobile */
+@media (max-width: 640px) {
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+}
