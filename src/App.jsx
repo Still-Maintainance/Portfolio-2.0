@@ -14,6 +14,9 @@ import portfolio from "./assets/projects/portfolio.jpg";
 import taskify from "./assets/projects/taskify.png";
 import taskify2 from "./assets/projects/taskify2.png";
 import taskify3 from "./assets/projects/taskify3.png";
+import Abouts from "./assets/projects/About.png";
+import skils from "./assets/projects/skills.png";
+import projectimg from "./assets/projects/project.png";
 
 export default function App() {
   return (
@@ -38,7 +41,7 @@ export default function App() {
           number="2"
           description="A modern, responsive portfolio website built with React, Vite, and TailwindCSS, featuring a sleek dark theme and interactive elements."
           technologies={["React", "TailwindCSS", "Vite", "Framer Motion", "React Icons", "Netlify"]}
-          images={[portfolio]}
+          images={[portfolio, projectimg, skils, Abouts ]}
           demoLink="https://farissi-hamza.netlify.app/"
           githubLink="https://github.com/roxxe3/Portfolio-2.0"
         />
