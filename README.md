@@ -64,4 +64,3 @@ npm run build
 ## 🙏 Acknowledgements
 
 - Inspired by various portfolio designs and templates available online.
-- Special thanks to the open-source community for providing amazing tools and libraries.
