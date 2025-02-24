@@ -59,7 +59,9 @@ To create an optimized production build, run:
 npm run build
 ```
 
-
+```bash
+npm run preview 
+```
 
 ## 🙏 Acknowledgements
 
