@@ -27,7 +27,7 @@ export default function Header() {
           >
             Menu
           </NavButton>
-          <a href="/My CV.pdf" download="Farissi-CV.pdf" className="hidden lg:block">
+          <a href="/Resume Hamza Farissi.pdf" download="Farissi-CV.pdf" className="hidden lg:block">
             <Button title="Download CV" />
           </a>
         </div>

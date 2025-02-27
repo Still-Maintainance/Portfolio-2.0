@@ -59,10 +59,13 @@ To create an optimized production build, run:
 npm run build
 ```
 
-```bash
-npm run preview 
-```
+The output will be in the `dist` directory. You can then deploy the contents of this directory to your preferred hosting service.
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgements
 
 - Inspired by various portfolio designs and templates available online.
+- Special thanks to the open-source community for providing amazing tools and libraries.
