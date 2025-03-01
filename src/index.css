@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-
-/* Custom CSS Variables moved to :root */
 :root {
   --animation-float: float 6s ease-in-out infinite;
   --animation-float-delayed: float 6s ease-in-out 3s infinite;
