@@ -40,7 +40,7 @@ export function Navitem({ children, className, href, onClick }) {
     <a 
       href={href} 
       onClick={onClick}
-      className={`text-white ${className} text-shadow mx-1`}
+      className={`text-white ${className} text-shadow `}
     >
       {children}
     </a>
