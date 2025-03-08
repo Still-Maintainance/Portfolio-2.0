@@ -76,31 +76,7 @@ export default function Contact() {
               Farissi
             </h1>
           </div>
-
-          <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
-            <nav className="flex items-center justify-between gap-x-8 rounded-full bg-[#1C1C1C] px-1 py-1">
-              <Icone
-                src={email}
-                alt="Email"
-                href="mailto:hamzafarissi7@gmail.com"
-              />
-              <Icone
-                src={link}
-                alt="LinkedIn"
-                href="https://www.linkedin.com/in/hamza-farissi212001/"
-              />
-              <Icone 
-                src={github} 
-                alt="GitHub" 
-                href="https://github.com/roxxe3" 
-              />
-              <Icone
-                src={twiter}
-                alt="Twitter"
-                href="https://x.com/HamzaFarissi0"
-              />
-            </nav>
-          </div>
+          <Socials />
 
           <a href="/Resume Hamza Farissi.pdf" download="Farissi-CV.pdf" className="hidden lg:block">
             <Button title="Download CV" />
@@ -162,4 +138,33 @@ export function Style() {
       />
     </div>
   );
+}
+
+function Socials(){
+  return (
+    <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
+    <nav className="flex items-center justify-between gap-x-8 rounded-full bg-[#1C1C1C] px-1 py-1">
+      <Icone
+        src={email}
+        alt="Email"
+        href="mailto:hamzafarissi7@gmail.com"
+      />
+      <Icone
+        src={link}
+        alt="LinkedIn"
+        href="https://www.linkedin.com/in/hamza-farissi212001/"
+      />
+      <Icone 
+        src={github} 
+        alt="GitHub" 
+        href="https://github.com/roxxe3" 
+      />
+      <Icone
+        src={twiter}
+        alt="Twitter"
+        href="https://x.com/HamzaFarissi0"
+      />
+    </nav>
+  </div>
+  )
 }
