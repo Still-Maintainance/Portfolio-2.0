@@ -10,7 +10,7 @@
   --font-display: 'Poppins', sans-serif;
 }
 
-/* Tailwind custom utilities */
+
 @layer utilities {
   .font-display {
     font-family: var(--font-display);
