@@ -3,6 +3,7 @@ import { NavButton } from "./Navbar";
 import { useState } from "react";
 import ico from "./assets/google-gemini-icon.svg";
 import Button from "./components/Button";
+import { Socials } from "./Contact";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,6 +28,7 @@ export default function Header() {
           >
             Menu
           </NavButton>
+
           <a href="/Resume Hamza Farissi.pdf" download="Farissi-CV.pdf" className="hidden lg:block">
             <Button title="Download CV" />
           </a>
