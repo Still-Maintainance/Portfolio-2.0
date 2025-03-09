@@ -140,7 +140,7 @@ export function Style() {
   );
 }
 
-function Socials(){
+export function Socials(){
   return (
     <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
     <nav className="flex items-center justify-between gap-x-8 rounded-full bg-[#1C1C1C] px-1 py-1">
