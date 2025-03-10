@@ -8,7 +8,7 @@ export default function Project({
   number, 
   description, 
   technologies, 
-  images = [], // Set default empty array
+  images = [],
   demoLink, 
   githubLink 
 }) {
