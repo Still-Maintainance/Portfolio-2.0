@@ -28,7 +28,9 @@ export default function Header() {
           >
             Menu
           </NavButton>
-
+          <div className="hidden lg:hidden gap-4">
+            <Socials />
+          </div>
           <a href="/Resume Hamza Farissi.pdf" download="Farissi-CV.pdf" className="hidden lg:block">
             <Button title="Download CV" />
           </a>
