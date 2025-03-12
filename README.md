@@ -17,7 +17,7 @@ A modern, responsive portfolio website built with React, Vite, and TailwindCSS, 
 ## 🛠️ Tech Stack
 
 - [React](https://reactjs.org/) - Frontend library
-- [Vite](https://vitejs.dev/) - Build tool
+- [Vite](https://vitejs.dev/) - Build tool  
 - [TailwindCSS](https://tailwindcss.com/) - Styling
 - [Framer Motion](https://www.framer.com/motion/) - Animations
 - [React Icons](https://react-icons.github.io/react-icons/) - Icons
