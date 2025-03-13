@@ -61,9 +61,6 @@ npm run build
 
 The output will be in the `dist` directory. You can then deploy the contents of this directory to your preferred hosting service.
 
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgements
 
