@@ -17,7 +17,7 @@ A modern, responsive portfolio website built with React, Vite, and TailwindCSS, 
 ## 🛠️ Tech Stack
 
 - [React](https://reactjs.org/) - Frontend library
-- [Vite](https://vitejs.dev/) - Build tool  
+- [Vite](https://vitejs.dev/) - Build tool
 - [TailwindCSS](https://tailwindcss.com/) - Styling
 - [Framer Motion](https://www.framer.com/motion/) - Animations
 - [React Icons](https://react-icons.github.io/react-icons/) - Icons
@@ -61,7 +61,12 @@ npm run build
 
 The output will be in the `dist` directory. You can then deploy the contents of this directory to your preferred hosting service.
 
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 ## 🙏 Acknowledgements
 
 - Inspired by various portfolio designs and templates available online.
 - Special thanks to the open-source community for providing amazing tools and libraries.
+- Design inspired by [2024 Portfolios (Community) on Figma](https://www.figma.com/design/CD4y4llQl5FaKMNBlxiQu7/2024-Portfolios-(Community)?node-id=0-1&p=f&t=Sc058iDgrxCtK8d0-0).
