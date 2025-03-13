@@ -7,25 +7,25 @@ export default function Steps() {
       number: "1",
       title: "Requirement Analysis",
       description: "I begin by understanding project goals, defining system architecture, and gathering technical requirements to lay a strong foundation for both backend and frontend development.",
-      rotation: "0"
+      rotationClass: "rotate-0"
     },
     {
       number: "2",
       title: "Backend Development",
       description: "I build secure, scalable APIs and optimize server-side logic using technologies like Python, C++, or Node.js, ensuring performance and reliability.",
-      rotation: "90"
+      rotationClass: "rotate-90"
     },
     {
       number: "3",
       title: "Frontend Development",
       description: "I design and implement responsive user interfaces that integrate seamlessly with the backend, focusing on creating intuitive and engaging user experiences.",
-      rotation: "180"
+      rotationClass: "rotate-180"
     },
     {
       number: "4",
       title: "Deployment & Optimization",
       description: "I deploy applications to AWS or other cloud platforms, set up CI/CD pipelines, and monitor performance. I also fine-tune the backend and frontend for maximum efficiency.",
-      rotation: "0"
+      rotationClass: "rotate-0"
     }
   ];
 
@@ -81,7 +81,7 @@ export default function Steps() {
               <div className="flex flex-col items-start">
                 <div className="flex items-center">
                   <img 
-                    className={`w-8 h-8 sm:w-10 sm:h-10 transform transition-all duration-300 rotate-${step.rotation} hover:scale-110`} 
+                    className={`w-8 h-8 sm:w-10 sm:h-10 transform transition-all duration-300 ${step.rotationClass} hover:scale-110`} 
                     src={pac} 
                     alt="pacman" 
                   />
