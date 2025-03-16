@@ -99,7 +99,9 @@ export function NavButton({ className, setIsMenuOpen, isMenuOpen }) {
           >
             Contact me
           </Navitem>
+          <a href="/Resume Hamza Farissi.pdf" download="Farissi-CV.pdf" className="block px-4 py-3 transition-colors duration-200 last:rounded-b-lg hover:bg-[#292929]">Download CV</a>
         </div>
+        
       )}
     </div>
   );
