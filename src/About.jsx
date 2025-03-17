@@ -58,7 +58,7 @@ export default function About() {
       />
 
       {/* About Me Section */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 mb-12 sm:mb-24">
+      <div className="max-w-4xl mx-auto  sm:px-6 mb-12 sm:mb-24">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
