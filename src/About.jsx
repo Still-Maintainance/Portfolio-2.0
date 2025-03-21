@@ -57,7 +57,6 @@ export default function About() {
         className="absolute bottom-10 left-15 w-32 opacity-10 -rotate-50 pointer-events-none"
       />
 
-      {/* About Me Section */}
       <div className="max-w-4xl mx-auto sm:px-6 mb-12 sm:mb-24">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
