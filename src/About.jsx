@@ -124,7 +124,7 @@ export default function About() {
         </motion.div>
       </div>
 
-      {/* Timeline Section */}
+
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6">
         
         <div className="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-[#FFD49C] to-[#7A87FB] opacity-30"></div>
