@@ -64,8 +64,8 @@ export default function About() {
           transition={{ duration: 0.5 }}
           className="p-6 sm:p-8 md:p-10 bg-[#151515] rounded-xl shadow-lg border border-transparent hover:border-[#7A87FB] transition-all duration-300" // Added responsive padding
         >
-          <div className="mb-8 sm:mb-12"> {/* Adjusted margin for mobile */}
-            <p className="text-base sm:text-lg text-gray-300"> {/* Made text responsive */}
+          <div className="mb-8 sm:mb-12">
+            <p className="text-base sm:text-lg text-gray-300">
               I&apos;m <span className="bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] bg-clip-text text-transparent font-semibold">
                 Hamza Farissi
               </span>, a software engineer focused on full-stack development, cloud computing, and system design.
@@ -96,7 +96,7 @@ export default function About() {
               infrastructure automation, and cloud security.
             </p>
 
-            {/* AWS Tools Grid */}
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
               {[
                 { name: "EC2", desc: "Compute & scalable instances" },
