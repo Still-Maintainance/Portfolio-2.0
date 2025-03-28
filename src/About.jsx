@@ -85,7 +85,7 @@ export default function About() {
             </motion.div>
           </div>
 
-          {/* AWS & Cloud Section */}
+
           <div>
             <h2 className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] bg-clip-text text-transparent mb-4 sm:mb-6">
               AWS & Cloud Expertise
