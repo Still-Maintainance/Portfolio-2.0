@@ -141,12 +141,12 @@ export default function About() {
                 index % 2 === 0 ? 'sm:flex-row' : 'sm:flex-row-reverse'
               } items-start sm:items-center gap-4 sm:gap-8 md:gap-16 pl-8 sm:pl-0`}
             >
-              {/* Timeline Dot - Adjusted positioning for mobile */}
+
               <div className="absolute -left-1.5 sm:left-1/2 transform sm:-translate-x-1/2 top-1/2 -translate-y-1/2 sm:top-1/2 sm:-translate-y-1/2 z-10">
                 <div className="w-4 h-4 sm:w-5 sm:h-5 bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] rounded-full"></div>
               </div>
 
-              {/* Content Card */}
+
               <div className="w-full sm:w-[calc(50%-3rem)] relative group p-4 sm:p-6 bg-[#151515] rounded-xl shadow-md border border-transparent hover:border-[#7A87FB] transition-all duration-300">
                 <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
                   <span className="text-xl sm:text-2xl">{item.icon}</span>
