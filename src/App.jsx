@@ -7,16 +7,9 @@ import TechStack from "./Tech";
 import Contact from "./Contact";
 import About from "./About";
 import assembly2 from "./assets/projects/assembly2.png";
-import assembly from "./assets/projects/assembly.png";
-import assemblyWin from "./assets/projects/assembly-win.png";
-import assemblyLost from "./assets/projects/assembly-lost.png";
-import portfolio from "./assets/projects/portfolio.jpg";
+import portfolio from "./assets/projects/portfolio.png";
 import taskify from "./assets/projects/taskify.png";
-import taskify2 from "./assets/projects/taskify2.png";
-import taskify3 from "./assets/projects/taskify3.png";
-import Abouts from "./assets/projects/About.png";
-import skils from "./assets/projects/skills.png";
-import projectimg from "./assets/projects/project.png";
+
 
 export default function App() {
   return (
@@ -28,31 +21,30 @@ export default function App() {
       <Title title="Some featured projects" id="projects" />
       <div>
         <Project
-          title="Assembly: Endgame"
+          title="Smart Wash - Laundry Service"
           number="1"
-          description="Assembly-Endgame is a word guessing game where players must guess a randomly selected word within 8 attempts to prevent the programming world from being taken over by Assembly language. The game features random word selection, letter guessing, life tracking, and win/lose conditions."
-          technologies={["React", "CSS"]}
-          images={[assembly2, assembly, assemblyWin, assemblyLost]}
-          demoLink="https://assembly-endgame-160527.netlify.app/"
-          githubLink="https://github.com/roxxe3/Assembly-Endgame"
+          description="I built and deployed a web platform for Smart Wash, a student-run laundry startup, to digitize service requests and improve customer interaction. The platform included WhatsApp integration for instant order confirmations, enhancing user convenience and trust. This digital transformation helped streamline operations and contributed to generating ₹4–5 Lakhs in monthly revenue by automating bookings and scaling outreach effectively."
+          technologies={["HTML", "CSS" , "JS" , "WhatsApp API"]}
+          images={[assembly2]}
+          demoLink="http://bosmartwash.in/"
+          githubLink="https://github.com/shanmukhchodagam/laundries-liberty_Paid04-03-2022_1790424563"
         />
         <Project
-          title="Portfolio 2.0"
+          title="Bhimavaram Open – Live Sports Streaming Platform"
           number="2"
-          description="A modern, responsive portfolio website built with React, Vite, and TailwindCSS, featuring a sleek dark theme and interactive elements."
-          technologies={["React", "TailwindCSS", "Vite", "Framer Motion", "React Icons", "Netlify"]}
-          images={[portfolio, projectimg, skils, Abouts ]}
-          demoLink="https://farissi-hamza.netlify.app/"
-          githubLink="https://github.com/roxxe3/Portfolio-2.0"
+          description="For the Bhimavaram Open Tennis Tournament, I developed a live streaming and audience engagement platform using OBS Studio and the YouTube API. This allowed real-time match broadcasts, making the event accessible to families and women who preferred to watch remotely—significantly boosting community reach. Partnering with Bhimavaram Digitals Pvt. Ltd., I also enabled monetization through sponsorships, ad placements, and live viewer contributions, generating over ₹20,000 in revenue and enhancing the tournament’s digital presence."
+          technologies={["HTML", "TailwindCSS", "JS", "PHP", "OBS", "XAMPP","AE"]}
+          images={[portfolio ]}
+           demoLink="https://www.youtube.com/watch?v=d7O6E2nQW00"
+          githubLink="https://github.com/shanmukhchodagam/laundries-liberty_Paid04-03-2022_1790424563"
         />
         <Project
-          title="Taskify"
+          title="Hospital Management System – ERP in Development"
           number="3"
-          description="Taskify is a serverless to-do list application designed for efficient task management. Built with AWS Lambda, DynamoDB, and Cognito, it leverages FastAPI for its backend and provides a seamless, user-friendly experience for organizing daily tasks."
-          technologies={["Next.js", "Tailwind CSS", "FastAPI", "AWS Lambda", "DynamoDB", "Cognito"]}
-          images={[taskify, taskify2, taskify3]}
-          demoLink="..."
-          githubLink="https://github.com/roxxe3/Taskify"
+          description="I'm currently building a custom ERP system for Kiran Neurology Centre to digitize and automate hospital operations. The system includes modules for lab testing, in-patient records, pharmacy inventory, billing, and medicine tracking. This project aims to improve accuracy, reduce manual errors, and increase overall operational efficiency in healthcare administration."
+          technologies={["HTML", "TailwindCSS", "JS", "PHP", "XAMPP"]}
+          images={[taskify]}
+          
         />
       </div>
       <Title title="Skills & Technologies" />

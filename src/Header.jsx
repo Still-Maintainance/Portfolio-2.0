@@ -14,7 +14,7 @@ export default function Header() {
         <div className="flex items-center justify-center gap-x-2">
           <img src={ico} alt="Group" width={35} className="transition-transform duration-300 hover:scale-110" />
           <h1 className="px-2 font-['Poppins'] text-xl bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] bg-clip-text text-transparent">
-            Farissi
+            Sagar Addagarla
           </h1>
         </div>
         
@@ -31,7 +31,7 @@ export default function Header() {
           <div className="hidden lg:hidden gap-4">
             <Socials />
           </div>
-          <a href="/Resume Hamza Farissi.pdf" download="Farissi-CV.pdf" className="hidden lg:block">
+          <a href="/Addagarla Sri Vidya Sagar.pdf" download="Addagarla Sri Vidya Sagar.pdf" className="hidden lg:block">
             <Button title="Download CV" />
           </a>
         </div>

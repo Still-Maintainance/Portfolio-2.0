@@ -1,13 +1,15 @@
 /* eslint-disable react/prop-types */
 import link from "./assets/linkedin.svg";
 import github from "./assets/github.svg";
-import twiter from "./assets/twitter.svg";
 import ico from "./assets/google-gemini-icon.svg";
 import portal from "./assets/Portal.svg";
 import Title from "./Title";
 import ContactForm from "./ContactForm";
 import { useState } from "react";
 import Button from "./components/Button";
+import { SiLeetcode } from "react-icons/si";
+
+
 import email from "./assets/email.svg";
 
 export default function Contact() {
@@ -73,12 +75,12 @@ export default function Contact() {
               className="transition-transform duration-300 hover:scale-110"
             />
             <h1 className="px-2 font-['Poppins'] text-xl bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] bg-clip-text text-transparent">
-              Farissi
+              Sagar Addagarla
             </h1>
           </div>
           <Socials />
 
-          <a href="/Resume Hamza Farissi.pdf" download="Farissi-CV.pdf" className="hidden lg:block">
+          <a href="/Addagarla Sri Vidya Sagar.pdf" download="Addagarla Sri Vidya Sagar.pdf" className="hidden lg:block">
             <Button title="Download CV" />
           </a>
         </div>
@@ -87,18 +89,7 @@ export default function Contact() {
   );
 }
 
-export function Icone({ src, alt, href }) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="rounded-full bg-[#292929] px-5 py-2.5 transition-colors hover:bg-[#363636]"
-    >
-      <img width={24} src={src} alt={alt} />
-    </a>
-  );
-}
+
 
 export function Style() {
   return (
@@ -140,31 +131,46 @@ export function Style() {
   );
 }
 
-export function Socials(){
+export function Icone({ icon: Icon, href, label }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label}
+      className="rounded-full bg-[#292929] px-5 py-2.5 transition-colors hover:bg-[#363636] flex items-center justify-center"
+    >
+      <Icon size={24} className="text-white" />
+    </a>
+  );
+}
+
+
+export function Socials() {
   return (
     <div className="rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px]">
-    <nav className="flex items-center justify-between gap-x-8 rounded-full bg-[#1C1C1C] px-1 py-1">
-      <Icone
-        src={email}
-        alt="Email"
-        href="mailto:hamzafarissi7@gmail.com"
-      />
-      <Icone
-        src={link}
-        alt="LinkedIn"
-        href="https://www.linkedin.com/in/hamza-farissi212001/"
-      />
-      <Icone 
-        src={github} 
-        alt="GitHub" 
-        href="https://github.com/roxxe3" 
-      />
-      <Icone
-        src={twiter}
-        alt="Twitter"
-        href="https://x.com/HamzaFarissi0"
-      />
-    </nav>
-  </div>
-  )
+      <nav className="flex items-center justify-between gap-x-8 rounded-full bg-[#1C1C1C] px-1 py-1">
+        <Icone
+          icon={() => <img src={email} alt="Email" width={24} />}
+          href="mailto:sagaraddagarla@gmail.com"
+          label="Email"
+        />
+        <Icone
+          icon={() => <img src={link} alt="LinkedIn" width={24} />}
+          href="https://www.linkedin.com/in/sagaraddagarla/"
+          label="LinkedIn"
+        />
+        <Icone
+          icon={() => <img src={github} alt="GitHub" width={24} />}
+          href="https://github.com/Still-Maintainance"
+          label="GitHub"
+        />
+        <Icone
+          icon={SiLeetcode}
+          href="https://leetcode.com/u/stillmaintainance/"
+          label="LeetCode"
+        />
+      </nav>
+    </div>
+  );
 }
