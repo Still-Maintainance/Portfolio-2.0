@@ -41,7 +41,7 @@ export default function App() {
         <Project
           title="Hospital Management System – ERP in Development"
           number="3"
-          description="I'm currently building a custom ERP system for Kiran Neurology Centre to digitize and automate hospital operations. The system includes modules for lab testing, in-patient records, pharmacy inventory, billing, and medicine tracking. This project aims to improve accuracy, reduce manual errors, and increase overall operational efficiency in healthcare administration."
+          description="Contributed to the development of a custom ERP system for Kiran Neurology Centre aimed at digitizing and automating hospital operations. The system includes modules for lab testing, in-patient records, pharmacy inventory, billing, and medicine tracking.Helping improve accuracy, reduce manual errors, and increase operational efficiency."
           technologies={["HTML", "TailwindCSS", "JS", "PHP", "XAMPP"]}
           images={[taskify]}
           
