@@ -1,8 +1,5 @@
 # Personal Portfolio Website
 
-A modern, responsive portfolio website built with React, Vite, and TailwindCSS, featuring a sleek dark theme and interactive elements.
-
-![Portfolio Preview](./src/assets/projects/portfolio.jpg)
 
 ## ✨ Features
 
@@ -64,6 +61,3 @@ The output will be in the `dist` directory. You can then deploy the contents of 
 
 ## 🙏 Acknowledgements
 
-- Inspired by various portfolio designs and templates available online.
-- Special thanks to the open-source community for providing amazing tools and libraries.
-- Design inspired by [2024 Portfolios (Community) on Figma](https://www.figma.com/design/CD4y4llQl5FaKMNBlxiQu7/2024-Portfolios-(Community)?node-id=0-1&p=f&t=Sc058iDgrxCtK8d0-0).
