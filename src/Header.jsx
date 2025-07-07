@@ -31,7 +31,7 @@ export default function Header() {
           <div className="hidden lg:hidden gap-4">
             <Socials />
           </div>
-          <a href="/Addagarla Sri Vidya Sagar.pdf" download="Addagarla Sri Vidya Sagar.pdf" className="hidden lg:block">
+          <a href="/Addagarla Sri Vidya Sagar.pdf" download="Addagarla_Sri_Vidya_Sagar.pdf" className="hidden lg:block">
             <Button title="Download CV" />
           </a>
         </div>
