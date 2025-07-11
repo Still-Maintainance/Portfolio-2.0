@@ -6,9 +6,7 @@ import portal from "./assets/Portal.svg";
 import Title from "./Title";
 import ContactForm from "./ContactForm";
 import { useState } from "react";
-import Button from "./components/Button";
 import { SiLeetcode } from "react-icons/si";
-
 
 import email from "./assets/email.svg";
 
@@ -16,9 +14,12 @@ export default function Contact() {
   const [showForm, setShowForm] = useState(false);
 
   return (
-    <div className="text-text-sm mx-auto flex w-13/14 flex-col items-start justify-start gap-5 lg:mx-auto lg:mt-20 lg:w-15/20" id="contact">
+    <div
+      className="text-text-sm mx-auto flex w-13/14 flex-col items-start justify-start gap-5 lg:mx-auto lg:mt-20 lg:w-15/20"
+      id="contact"
+    >
       <div className="flex flex-col">
-        <div className="flex w-full  lg:gap-70">
+        <div className="flex w-full lg:gap-70">
           <div className="flex flex-col lg:flex-row lg:justify-between">
             <div className="flex flex-col lg:w-187">
               <Title
@@ -65,23 +66,27 @@ export default function Contact() {
         </div>
       )}
 
-      <footer className="w-full border-t border-[#7A87FB]/10 bg-[#101111]/80 backdrop-blur-md mt-20">
-        <div className="mx-auto px-4 py-6 flex items-center justify-between">
-          <div className="hidden lg:flex items-center justify-center gap-x-2">
-            <img 
-              src={ico} 
-              alt="Group" 
-              width={35} 
+      <footer className="mt-20 w-full border-t border-[#7A87FB]/10 bg-[#101111]/80 backdrop-blur-md">
+        <div className="mx-auto flex items-center justify-between px-4 py-6">
+          <div className="hidden items-center justify-center gap-x-2 lg:flex">
+            <img
+              src={ico}
+              alt="Group"
+              width={35}
               className="transition-transform duration-300 hover:scale-110"
             />
-            <h1 className="px-2 font-['Poppins'] text-xl bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] bg-clip-text text-transparent">
+            <h1 className="bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] bg-clip-text px-2 font-['Poppins'] text-xl text-transparent">
               Sagar Addagarla
             </h1>
           </div>
           <Socials />
 
-          <a href="/Addagarla_Sri_Vidya_Sagar.pdf" download="Addagarla_Sri_Vidya_Sagar.pdf" className="hidden lg:block">
-            <Button title="Download Resume" />
+          <a
+            href="/Addagarla_Sri_Vidya_Sagar.pdf"
+            download
+            className="block rounded-lg bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700"
+          >
+            Download Resume
           </a>
         </div>
       </footer>
@@ -89,13 +94,11 @@ export default function Contact() {
   );
 }
 
-
-
 export function Style() {
   return (
     <div
       data-layer="Frame 1597884173"
-      className="Frame1597884173 relative hidden h-80 w-40 lg:block mt-30"
+      className="Frame1597884173 relative mt-30 hidden h-80 w-40 lg:block"
     >
       <div
         data-layer="Line 134"
@@ -138,13 +141,12 @@ export function Icone({ icon: Icon, href, label }) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
-      className="rounded-full bg-[#292929] px-5 py-2.5 transition-colors hover:bg-[#363636] flex items-center justify-center"
+      className="flex items-center justify-center rounded-full bg-[#292929] px-5 py-2.5 transition-colors hover:bg-[#363636]"
     >
       <Icon size={24} className="text-white" />
     </a>
   );
 }
-
 
 export function Socials() {
   return (
