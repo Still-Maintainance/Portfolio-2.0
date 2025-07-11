@@ -44,14 +44,7 @@ export default function Header() {
           >
             Download Resume
           </a>
-          <a
-            href="/Addagarla_Sri_Vidya_Sagar.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block ..."
-          >
-            View CV
-          </a>
+         
         </div>
       </div>
     </header>
