@@ -32,7 +32,7 @@ export default function Header() {
             <Socials />
           </div>
           <a href="/Addagarla Sri Vidya Sagar.pdf" download="Addagarla_Sri_Vidya_Sagar.pdf" className="hidden lg:block">
-            <Button title="Download CV" />
+            <Button title="Download Resume" />
           </a>
         </div>
       </div>

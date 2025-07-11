@@ -8,8 +8,8 @@ export default function Navbar() {
     <>
       <div className="hidden rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] lg:block">
         <nav className="flex items-center justify-between gap-x-10 rounded-full bg-[#1C1C1C] transition-all duration-300">
-          <Navitem 
-            href="#home" 
+          <Navitem
+            href="#home"
             className="cursor-pointer"
             onClick={(e) => {
               e.preventDefault();
@@ -17,16 +17,30 @@ export default function Navbar() {
             }}
           >
             <div className="m-1 rounded-full bg-[#292929] px-4 transition-all duration-300 hover:scale-110">
-              <img width={37} src={homeIcon} alt="Home" className="transition-transform duration-300" />
+              <img
+                width={37}
+                src={homeIcon}
+                alt="Home"
+                className="transition-transform duration-300"
+              />
             </div>
           </Navitem>
-          <Navitem href="#about" className="transition-all duration-300 hover:text-[#FFD49C] hover:scale-105">
+          <Navitem
+            href="#about"
+            className="transition-all duration-300 hover:scale-105 hover:text-[#FFD49C]"
+          >
             About
           </Navitem>
-          <Navitem href="#projects" className="transition-all duration-300 hover:text-[#FFD49C] hover:scale-105">
+          <Navitem
+            href="#projects"
+            className="transition-all duration-300 hover:scale-105 hover:text-[#FFD49C]"
+          >
             Projects
           </Navitem>
-          <Navitem href="#contact" className="mr-8 transition-all duration-300 hover:text-[#FFD49C] hover:scale-105">
+          <Navitem
+            href="#contact"
+            className="mr-8 transition-all duration-300 hover:scale-105 hover:text-[#FFD49C]"
+          >
             Contact me
           </Navitem>
         </nav>
@@ -37,10 +51,10 @@ export default function Navbar() {
 
 export function Navitem({ children, className, href, onClick }) {
   return (
-    <a 
-      href={href} 
+    <a
+      href={href}
       onClick={onClick}
-      className={`text-white ${className} text-shadow `}
+      className={`text-white ${className} text-shadow`}
     >
       {children}
     </a>
@@ -67,7 +81,7 @@ export function NavButton({ className, setIsMenuOpen, isMenuOpen }) {
       </button>
       {isMenuOpen && (
         <div className="absolute top-full right-0 z-50 mt-2 w-48 rounded-lg border border-[#363636] bg-[#1C1C1C] shadow-lg backdrop-blur-lg">
-          <Navitem 
+          <Navitem
             href="#home"
             onClick={(e) => {
               e.preventDefault();
@@ -78,30 +92,36 @@ export function NavButton({ className, setIsMenuOpen, isMenuOpen }) {
           >
             Home
           </Navitem>
-          <Navitem 
+          <Navitem
             href="#about"
             onClick={() => setIsMenuOpen(false)}
             className="block px-4 py-3 transition-colors duration-200 hover:bg-[#292929]"
           >
             About
           </Navitem>
-          <Navitem 
+          <Navitem
             href="#projects"
             onClick={() => setIsMenuOpen(false)}
             className="block px-4 py-3 transition-colors duration-200 hover:bg-[#292929]"
           >
             Projects
           </Navitem>
-          <Navitem 
+          <Navitem
             href="#contact"
             onClick={() => setIsMenuOpen(false)}
-            className="block px-4 py-3 transition-colors duration-200 last:rounded-b-lg hover:bg-[#292929]"
+            className="block px-4 py-3 transition-colors duration-200 hover:bg-[#292929]"
           >
             Contact me
           </Navitem>
-          <a href="/Addagarla_Sri_vidya_Sagar.pdf" download="Addagarla_Sri_vidya_Sagar.pdf" className="block px-4 py-3 transition-colors duration-200 last:rounded-b-lg hover:bg-[#292929]">Download CV</a>
+          <a
+            href="/Addagarla_Sri_vidya_Sagar.pdf"
+            download="Addagarla_Sri_vidya_Sagar.pdf"
+            className="block rounded-b-lg px-4 py-3 transition-colors duration-200 hover:bg-[#292929]"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Download CV
+          </a>
         </div>
-        
       )}
     </div>
   );
