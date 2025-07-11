@@ -81,13 +81,7 @@ export default function Contact() {
           </div>
           <Socials />
 
-          <a
-            href="/Addagarla_Sri_Vidya_Sagar.pdf"
-            download
-            className="block rounded-lg bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700"
-          >
-            Download Resume
-          </a>
+          
         </div>
       </footer>
     </div>

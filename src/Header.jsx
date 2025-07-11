@@ -2,7 +2,6 @@ import Navbar from "./Navbar";
 import { NavButton } from "./Navbar";
 import { useState } from "react";
 import ico from "./assets/google-gemini-icon.svg";
-import Button from "./components/Button";
 import { Socials } from "./Contact";
 
 export default function Header() {
@@ -36,15 +35,17 @@ export default function Header() {
           <div className="hidden gap-4 lg:hidden">
             <Socials />
           </div>
+
           <a
             href="/Addagarla_Sri_Vidya_Sagar.pdf"
             download
             onClick={() => setIsMenuOpen(false)}
-            className="block w-full rounded-b-lg bg-[#1e1e1e] px-4 py-3 text-center text-white transition-colors duration-200 hover:bg-[#292929]"
+            className="inline-block rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] transition-transform duration-100 active:scale-95"
           >
-            Download Resume
+            <span className="block rounded-full bg-[#0F0F0F] px-6 py-2 text-sm font-semibold text-white">
+              Download Resume
+            </span>
           </a>
-         
         </div>
       </div>
     </header>
