@@ -80,8 +80,8 @@ export default function Contact() {
           </div>
           <Socials />
 
-          <a href="/Addagarla Sri Vidya Sagar.pdf" download="Addagarla Sri Vidya Sagar.pdf" className="hidden lg:block">
-            <Button title="Download CV" />
+          <a href="/Addagarla_Sri_Vidya_Sagar.pdf" download="Addagarla_Sri_Vidya_Sagar.pdf" className="hidden lg:block">
+            <Button title="Download Resume" />
           </a>
         </div>
       </footer>
