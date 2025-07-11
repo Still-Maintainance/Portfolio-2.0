@@ -114,8 +114,8 @@ export function NavButton({ className, setIsMenuOpen, isMenuOpen }) {
             Contact me
           </Navitem>
           <a
-            href="/Addagarla_Sri_vidya_Sagar.pdf"
-            download="Addagarla_Sri_vidya_Sagar.pdf"
+            href="/Addagarla_Sri_Vidya_Sagar.pdf"
+            download="Addagarla_Sri_Vidya_Sagar.pdf"
             className="block rounded-b-lg px-4 py-3 transition-colors duration-200 hover:bg-[#292929]"
             onClick={() => setIsMenuOpen(false)}
           >
