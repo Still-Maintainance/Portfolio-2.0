@@ -105,7 +105,7 @@ export default function Project({
                 {tech}
               </span>
             ))}
-          </div>
+          </div> 
         </div>
       </div>
     </motion.div>

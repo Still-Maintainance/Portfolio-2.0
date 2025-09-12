@@ -7,9 +7,8 @@ import TechStack from "./Tech";
 import Contact from "./Contact";
 import About from "./About";
 import assembly2 from "./assets/projects/assembly2.png";
-import portfolio from "./assets/projects/portfolio.png";
-import taskify from "./assets/projects/taskify.png";
-
+import mernBlogImage from "./assets/mern.png"; // temporary
+import urlShortenerImage from "./assets/url.jpeg";
 
 export default function App() {
   return (
@@ -24,33 +23,47 @@ export default function App() {
           title="Smart Wash - Laundry Service"
           number="1"
           description="I built and deployed a web platform for Smart Wash, a student-run laundry startup, to digitize service requests and improve customer interaction. The platform included WhatsApp integration for instant order confirmations, enhancing user convenience and trust. This digital transformation helped streamline operations and contributed to generating ₹4–5 Lakhs in monthly revenue by automating bookings and scaling outreach effectively."
-          technologies={["HTML", "CSS" , "JS" , "WhatsApp API"]}
+          technologies={["HTML", "CSS", "JS", "WhatsApp API"]}
           images={[assembly2]}
           demoLink="http://bosmartwash.in/"
           githubLink="https://github.com/shanmukhchodagam/laundries-liberty_Paid04-03-2022_1790424563"
         />
         <Project
-          title="Bhimavaram Open – Live Sports Streaming Platform"
-          number="2"
-          description="For the Bhimavaram Open Tennis Tournament, I developed a live streaming and audience engagement platform using OBS Studio and the YouTube API. This allowed real-time match broadcasts, making the event accessible to families and women who preferred to watch remotely—significantly boosting community reach. Partnering with Bhimavaram Digitals Pvt. Ltd., I also enabled monetization through sponsorships, ad placements, and live viewer contributions, generating over ₹20,000 in revenue and enhancing the tournament’s digital presence."
-          technologies={["HTML", "TailwindCSS", "JS", "PHP", "OBS", "XAMPP","AE"]}
-          images={[portfolio ]}
-           demoLink="https://www.youtube.com/watch?v=d7O6E2nQW00"
-          githubLink="https://github.com/shanmukhchodagam/laundries-liberty_Paid04-03-2022_1790424563"
-        />
-        <Project
-          title="Hospital Management System – ERP in Development"
+          title="URL Shortener – Full Stack Web App"
           number="3"
-          description="Contributed to the development of a custom ERP system for Kiran Neurology Centre aimed at digitizing and automating hospital operations. The system includes modules for lab testing, in-patient records, pharmacy inventory, billing, and medicine tracking.Helping improve accuracy, reduce manual errors, and increase operational efficiency."
-          technologies={["HTML", "TailwindCSS", "JS", "PHP", "XAMPP"]}
-          images={[taskify]}
-          
+          description="Built a full-stack URL shortening service using the MERN stack, capable of handling thousands of daily requests. Developed RESTful APIs with Express.js and MongoDB for secure URL mapping and redirection. Created a responsive React.js interface enabling quick link generation and analytics."
+          technologies={[
+            "MongoDB",
+            "Express.js",
+            "React.js",
+            "Node.js",
+            "TailwindCSS",
+          ]}
+          images={[urlShortenerImage]}
+          githubLink="https://github.com/your-username/url-shortener"
+          demoLink="https://url-shortener-demo.com"
+        />
+
+        <Project
+          title="MERN Blog Post Website – Full Stack Blogging Platform"
+          number="4"
+          description="Engineered a full-stack blogging platform supporting CRUD operations for posts with real-time updates. Optimized backend APIs in Node.js and Express.js for high performance and scalability. Designed a mobile-friendly UI using React.js and Tailwind CSS for seamless user interaction."
+          technologies={[
+            "MongoDB",
+            "Express.js",
+            "React.js",
+            "Node.js",
+            "TailwindCSS",
+          ]}
+          images={[mernBlogImage]}
+          githubLink="https://github.com/your-username/mern-blog"
+          demoLink="https://mern-blog-demo.com"
         />
       </div>
       <Title title="Skills & Technologies" />
 
       <TechStack />
-      <Title title="About Me" id="about"/>
+      <Title title="About Me" id="about" />
       <About />
       <Contact />
     </div>
