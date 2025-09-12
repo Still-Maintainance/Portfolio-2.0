@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Portal from "./components/Portal";
 import portalImage from "./assets/Portal.svg";
-import { FaGraduationCap, FaGoogle ,  FaLaptopCode , FaSchool} from "react-icons/fa";
+import { FaGraduationCap, FaGoogle, FaLaptopCode, FaSchool } from "react-icons/fa";
 
 export default function About() {
   const educationItems = [
@@ -135,46 +135,47 @@ export default function About() {
 
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
               {[
-                {
-                  name: "HTML & CSS",
-                  desc: "Building structured, responsive layouts and user interfaces",
+                { 
+                  name: "MongoDB",
+                  desc: "NoSQL document database for flexible, schema-less data storage",
                 },
                 {
-                  name: "JavaScript",
-                  desc: "Adding interactivity and dynamic functionality to web pages",
+                  name: "Express",
+                  desc: "Minimal and flexible Node.js web framework for building APIs and web apps",
                 },
                 {
                   name: "React",
                   desc: "Developing scalable, component-based frontend applications",
                 },
                 {
-                  name: "SQL",
-                  desc: "Managing relational databases and performing data operations",
+                  name: "Node.js",
+                  desc: "JavaScript runtime for building fast, scalable server-side applications",
                 },
                 {
-                  name: "XAMPP",
-                  desc: "Local server environment for backend and database testing",
-                },
-                {
-                  name: "Tailwind & Bootstrap",
+                  name: "Tailwind CSS",
                   desc: "Rapid UI development with utility-first and component-based styling",
                 },
-              ].map((awsService, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: index * 0.1 }}
-                  className="group rounded-lg border border-transparent bg-[#101111] p-3 transition-all duration-300 hover:border-[#7A87FB] sm:p-4"
-                >
-                  <h3 className="bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] bg-clip-text text-base font-medium text-transparent transition-colors group-hover:text-[#7A87FB] sm:text-lg">
-                    {awsService.name}
-                  </h3>
-                  <p className="mt-1 text-xs text-gray-400 sm:mt-2 sm:text-sm">
-                    {awsService.desc}
-                  </p>
-                </motion.div>
-              ))}
+                {
+                  name: "Firebase",
+                  desc: "Backend-as-a-service providing realtime DB, auth, hosting, and cloud functions",
+                }
+              ]
+                .map((awsService, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, delay: index * 0.1 }}
+                    className="group rounded-lg border border-transparent bg-[#101111] p-3 transition-all duration-300 hover:border-[#7A87FB] sm:p-4"
+                  >
+                    <h3 className="bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] bg-clip-text text-base font-medium text-transparent transition-colors group-hover:text-[#7A87FB] sm:text-lg">
+                      {awsService.name}
+                    </h3>
+                    <p className="mt-1 text-xs text-gray-400 sm:mt-2 sm:text-sm">
+                      {awsService.desc}
+                    </p>
+                  </motion.div>
+                ))}
             </div>
           </div>
         </motion.div>
@@ -191,9 +192,8 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className={`relative flex flex-col sm:flex-row ${
-                index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
-              } items-start gap-4 pl-8 sm:items-center sm:gap-8 sm:pl-0 md:gap-16`}
+              className={`relative flex flex-col sm:flex-row ${index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
+                } items-start gap-4 pl-8 sm:items-center sm:gap-8 sm:pl-0 md:gap-16`}
             >
               <div className="absolute top-1/2 -left-1.5 z-10 -translate-y-1/2 transform sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2">
                 <div className="h-4 w-4 rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] sm:h-5 sm:w-5"></div>

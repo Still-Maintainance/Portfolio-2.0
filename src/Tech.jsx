@@ -3,8 +3,7 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaReact,
-  FaPhp,
-  FaNodeJs,
+    FaNodeJs,
   FaGitAlt,
   FaGithub,
 } from "react-icons/fa";
@@ -15,7 +14,7 @@ import {
   SiBootstrap,
   SiMysql,
   SiExpress,
-  SiXampp,
+  SiMongodb
 } from "react-icons/si";
 
 const technologies = [
@@ -35,10 +34,12 @@ const technologies = [
     category: "Backend",
     description: "Developing server-side logic and APIs",
     skills: [
-      { name: "PHP", icon: FaPhp },
+
       { name: "Node.js", icon: FaNodeJs },
       { name: "Express.js", icon: SiExpress },
       { name: "MySQL", icon: SiMysql },
+      { name: "MongoDB", icon: SiMongodb }
+
     ],
   },
   {
@@ -47,7 +48,7 @@ const technologies = [
     skills: [
       { name: "Git", icon: FaGitAlt },
       { name: "GitHub", icon: FaGithub },
-      { name: "XAMPP", icon: SiXampp },
+
     ],
   },
 ];

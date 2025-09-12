@@ -7,8 +7,8 @@ import TechStack from "./Tech";
 import Contact from "./Contact";
 import About from "./About";
 import assembly2 from "./assets/projects/assembly2.png";
-import mernBlogImage from "./assets/mern.png"; // temporary
-import urlShortenerImage from "./assets/url.jpeg";
+import mernBlogImage from "./assets/blog.jpeg"; // temporary
+import urlShortenerImage from "./assets/mern.png";
 
 export default function App() {
   return (
