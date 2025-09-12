@@ -57,28 +57,7 @@ export default function Project({
           {(demoLink || githubLink) && (
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <div className="absolute bottom-4 left-4 flex gap-2 sm:gap-3">
-                {demoLink && (
-                  <div className="group relative rounded-md bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] transition-all duration-300 hover:shadow-lg hover:shadow-[#7A87FB]/50">
-                    <a 
-                      href={demoLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block px-3 py-1.5 sm:px-4 sm:py-2 rounded-md bg-[#101111] from-[#7A87FB] to-[#FFD49C] text-sm sm:text-base font-medium text-white hover:bg-gradient-to-r"
-                    >
-                      Live Demo
-                    </a>
-                  </div>
-                )}
-                {githubLink && (
-                  <a 
-                    href={githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-3 py-1.5 sm:px-4 sm:py-2 bg-[#151515] text-white rounded-md text-sm sm:text-base font-medium hover:bg-[#1c1c1c] transition-all border border-[#7A87FB]/20 hover:border-[#7A87FB]"
-                  >
-                    GitHub
-                  </a>
-                )}
+                
               </div>
             </div>
           )}
