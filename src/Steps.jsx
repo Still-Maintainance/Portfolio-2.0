@@ -5,23 +5,23 @@ export default function Steps() {
   const steps = [
     {
       number: "1",
-      title: "Requirement Analysis",
+      title: "Problem Analysis",
       description:
-        "I begin by understanding project goals, defining system architecture, and gathering technical requirements to lay a strong foundation for development.",
+        "I begin by deeply understanding the problem, defining clear requirements, and planning the solution architecture. Strong foundation in problem-solving ensures a robust design from the start.",
       rotationClass: "rotate-0"
     },
     {
       number: "2",
-      title: "Team Management & Performance Optimization",
+      title: "System Design",
       description:
-        "I lead collaboration efforts, manage timelines, and ensure code quality. I also focus on optimizing performance from the start to reduce bottlenecks later.",
+        "I design scalable, maintainable systems focusing on clean architecture, data flow, and separation of concerns. This phase ensures the solution is built on solid engineering principles.",
       rotationClass: "rotate-45"
     },
     {
       number: "3",
-      title: "Frontend Development",
+      title: "Implementation",
       description:
-        "I design and develop responsive, user-friendly interfaces using React, HTML, and CSS—focusing on accessibility, speed, and seamless integration with backend systems.",
+        "I develop clean, modular code following best practices. Whether frontend or backend, I emphasize readability, performance, and adherence to design patterns for long-term maintainability.",
       rotationClass: "rotate-180"
 
 
@@ -29,9 +29,9 @@ export default function Steps() {
     {
      
       number: "4",
-      title: "Backend Development",
+      title: "Optimization & Testing",
       description:
-        "I build secure, scalable APIs and server-side logic using technologies like PHP, Node.js, or Express—ensuring efficient data processing and system stability.",
+        "I debug, profile, and optimize for performance. Comprehensive testing ensures reliability. I use version control effectively and iterate based on feedback to deliver production-ready solutions.",
       rotationClass: "rotate-90"
     }
   ];

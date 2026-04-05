@@ -3,18 +3,23 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaReact,
-    FaNodeJs,
+  FaNodeJs,
   FaGitAlt,
   FaGithub,
+  FaCode,
 } from "react-icons/fa";
 
 import {
   SiJavascript,
   SiTailwindcss,
-  SiBootstrap,
-  SiMysql,
   SiExpress,
-  SiMongodb
+  SiMongodb,
+  SiNextdotjs,
+  SiFirebase,
+  SiSupabase,
+  SiPostman,
+  SiVercel,
+  SiNetlify,
 } from "react-icons/si";
 
 const technologies = [
@@ -22,33 +27,44 @@ const technologies = [
     category: "Frontend",
     description: "Building responsive and user-friendly interfaces",
     skills: [
+      { name: "React.js", icon: FaReact },
+      { name: "Next.js", icon: SiNextdotjs },
       { name: "HTML5", icon: FaHtml5 },
       { name: "CSS3", icon: FaCss3Alt },
       { name: "JavaScript", icon: SiJavascript },
-      { name: "React", icon: FaReact },
       { name: "TailwindCSS", icon: SiTailwindcss },
-      { name: "Bootstrap", icon: SiBootstrap },
     ],
   },
   {
     category: "Backend",
-    description: "Developing server-side logic and APIs",
+    description: "Server-side logic, APIs, and databases",
     skills: [
-
       { name: "Node.js", icon: FaNodeJs },
       { name: "Express.js", icon: SiExpress },
-      { name: "MySQL", icon: SiMysql },
-      { name: "MongoDB", icon: SiMongodb }
-
+      { name: "Next.js (API)", icon: SiNextdotjs },
+      { name: "Firebase", icon: SiFirebase },
+      { name: "Supabase", icon: SiSupabase },
+      { name: "MongoDB", icon: SiMongodb },
     ],
   },
   {
-    category: "Tools & DevOps",
-    description: "Version control, code editors, and local servers",
+    category: "Tools",
+    description: "Development tools and version control",
     skills: [
       { name: "Git", icon: FaGitAlt },
       { name: "GitHub", icon: FaGithub },
-
+      { name: "VS Code", icon: FaCode },
+      { name: "Postman", icon: SiPostman },
+    ],
+  },
+  {
+    category: "DevOps & Others",
+    description: "Deployment, CI/CD, and REST API design",
+    skills: [
+      { name: "Vercel", icon: SiVercel },
+      { name: "Netlify", icon: SiNetlify },
+      { name: "REST APIs", icon: FaCode },
+      { name: "CI/CD", icon: FaGitAlt },
     ],
   },
 ];
@@ -56,7 +72,7 @@ const technologies = [
 export default function TechStack() {
   return (
     <div className="mx-auto my-12 w-full px-4 sm:my-20 sm:w-15/20 sm:px-6">
-      <div className="grid gap-4 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
         {technologies.map((tech, index) => (
           <motion.div
             key={tech.category}

@@ -10,7 +10,7 @@ export default function About() {
       period: "2023 – 2027 (Expected)",
       details: [
         "Pursuing B.Tech in Computer Science",
-        "Focused on Full Stack Development and Data Science",
+        "Focused on problem-solving, DSA, and scalable system design",
       ],
       icon: (
         <FaGraduationCap
@@ -100,9 +100,7 @@ export default function About() {
               <span className="bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] bg-clip-text font-semibold text-transparent">
                 Sagar Addagarla
               </span>
-              , a full stack developer passionate about building real-world
-              solutions. I focus on crafting responsive web apps, automating
-              systems, and delivering clean, scalable digital experiences.
+              , a Software Engineer focused on solving complex problems through clean code and scalable design. I build full-stack applications with emphasis on performance, maintainability, and real-world impact.
             </p>
 
             <motion.div
@@ -112,25 +110,17 @@ export default function About() {
               className="mt-6 space-y-4"
             >
               <p className="text-gray-300">
-                I'm currently pursuing Computer Science Engineering and Design
-                at Sagi Rama Krishnam Raju Engineering College, focusing on full
-                stack development, web technologies, and data science.
+                I'm currently pursuing Computer Science Engineering at Sagi Rama Krishnam Raju Engineering College, with a strong focus on Data Structures & Algorithms, system design, and building production-ready applications.
               </p>
             </motion.div>
           </div>
 
           <div>
             <h2 className="mb-4 bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] bg-clip-text text-xl font-semibold text-transparent sm:mb-6 sm:text-2xl">
-              Full Stack Development
+              Engineering Approach
             </h2>
             <p className="mb-6 text-sm text-gray-300 sm:mb-8 sm:text-base">
-              As a core team member of Google Developer Groups Tech Team, I'm
-              actively involved in organizing tech events, workshops, and
-              community outreach. I bring strong leadership, punctuality, and a
-              collaborative mindset to every project. Having won a hackathon and
-              contributed to real-world products, I’m passionate about building
-              impactful solutions and staying engaged in the developer
-              ecosystem.
+              I'm committed to writing clean, modular code and building scalable systems. My approach focuses on problem-solving through data structures and algorithms, iterative development with proper version control, and continuous optimization for performance. I stay engaged with the developer community and actively participate in hackathons to apply engineering principles to real-world challenges.
             </p>
 
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">

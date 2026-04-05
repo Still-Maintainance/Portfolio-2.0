@@ -44,9 +44,7 @@ export default function Hero() {
             Hi, I&apos;m Sagar Addagarla.
           </h1>
           <p className="mx-4 my-3 text-sm/5.5 tracking-wide opacity-85 md:mx-10 md:my-5 md:max-w-xl md:whitespace-normal">
-             I&apos;m a full stack developer who enjoys building responsive,
-            user-friendly web applications. I focus on creating clean designs,
-            seamless user experiences, and efficient backend systems.
+            I&apos;m a Software Engineer focused on solving complex problems through clean code, scalable architecture, and thoughtful design. I build real-world applications with emphasis on performance, maintainability, and user impact.
           </p>
           <Button title="View Projects" onClick={handleScroll} />
         </div>

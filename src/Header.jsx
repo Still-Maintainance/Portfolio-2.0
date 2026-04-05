@@ -37,8 +37,8 @@ export default function Header() {
           </div>
 
           <a
-            href="/Addagarla_Sri_Vidya_Sagar.pdf"
-            download
+            href="/Software_Engineer.pdf"
+            download="Software_Engineer.pdf"
             onClick={() => setIsMenuOpen(false)}
             className="inline-block rounded-full bg-gradient-to-r from-[#FFD49C] to-[#7A87FB] p-[2px] transition-transform duration-100 active:scale-95"
           >
