@@ -163,7 +163,7 @@ export function Socials() {
         />
         <Icone
           icon={SiLeetcode}
-          href="https://leetcode.com/u/stillmaintainance/"
+          href="https://leetcode.com/u/Sagar_Addagarl/"
           label="LeetCode"
         />
       </nav>
